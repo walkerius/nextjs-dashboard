@@ -2,10 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\Dashboard\\customers",
-    "\\app\\Dashboard\\invoices",
-    "\\app\\ui"
+    "\\app\\dashboard",
+    "\\app\\dashboard\\(overview)",
+    "\\app\\lib",
+    "\\app\\ui",
+    "\\app\\ui\\dashboard",
+    "\\scripts"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\app\\ui\\dashboard\\cards.tsx",
   "PreviewInSolutionExplorer": false
 }
