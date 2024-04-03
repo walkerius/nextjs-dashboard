@@ -26,13 +26,6 @@ export type Invoice = {
   status: 'pending' | 'paid';
 };
 
-export type Item = {
-	id: string;
-	isLarge: boolean;
-	name: string;
-	recipientsid: string;
-}
-
 export type Revenue = {
   month: string;
   revenue: number;
@@ -92,4 +85,20 @@ export type InvoiceForm = {
   customer_id: string;
   amount: number;
   status: 'pending' | 'paid';
+};
+
+export type Item = {
+	id: string;
+	isLarge: boolean;
+	name: string;
+	recipientsid: string;
+}
+
+export type ItemCountTable = {
+	id: string;	
+	name: string;
+	isLarge: boolean;
+	total: number;
+	available: number;
+	size: string;
 };

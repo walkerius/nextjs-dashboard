@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import AddItems from '@/app/ui/dashboard/create-items';
+import CurrentItems from '@/app/ui/dashboard/item-counts';
 
 export default async function Page() {
 	/*const revenue = await fetchRevenue();*/
@@ -19,6 +20,10 @@ export default async function Page() {
 			<div>
 				<h2>Add new items</h2>
 				<AddItems/>
+			</div>
+			<div>
+				<h2>Current Items</h2>
+				<CurrentItems/>
 			</div>
 
 			<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
