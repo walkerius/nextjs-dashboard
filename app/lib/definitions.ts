@@ -26,6 +26,13 @@ export type Invoice = {
   status: 'pending' | 'paid';
 };
 
+export type Item = {
+	id: string;
+	isLarge: boolean;
+	name: string;
+	recipientsid: string;
+}
+
 export type Revenue = {
   month: string;
   revenue: number;
