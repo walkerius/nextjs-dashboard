@@ -3,15 +3,13 @@
     "",
     "\\app",
     "\\app\\dashboard",
+    "\\app\\dashboard\\(overview)",
     "\\app\\dashboard\\invoices\\[id]",
     "\\app\\dashboard\\invoices\\[id]\\edit",
     "\\app\\lib",
-    "\\app\\login",
     "\\app\\ui",
-    "\\app\\ui\\dashboard",
-    "\\app\\ui\\invoices",
-    "\\scripts"
+    "\\public"
   ],
-  "SelectedNode": "\\scripts\\bgseed.js",
+  "SelectedNode": "\\app\\ui\\global.css",
   "PreviewInSolutionExplorer": false
 }
