@@ -4,12 +4,12 @@
     "\\app",
     "\\app\\dashboard",
     "\\app\\dashboard\\(overview)",
-    "\\app\\dashboard\\invoices\\[id]",
-    "\\app\\dashboard\\invoices\\[id]\\edit",
+    "\\app\\dashboard\\customers",
     "\\app\\lib",
     "\\app\\ui",
+    "\\app\\ui\\invoices",
     "\\public"
   ],
-  "SelectedNode": "\\app\\ui\\global.css",
+  "SelectedNode": "\\app\\dashboard\\layout.tsx",
   "PreviewInSolutionExplorer": false
 }

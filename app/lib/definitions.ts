@@ -102,3 +102,16 @@ export type ItemCountTable = {
 	available: number;
 	size: string;
 };
+
+export type ItemsTable = {
+	itemsid: string;
+	size: string;
+	name: string;
+	recipientsid: string;
+	recipientsname: string;
+}
+
+export type apartmentField = {
+	id: string;
+	name: string;
+}

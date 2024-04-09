@@ -1,6 +1,6 @@
 'use server';
 
-import { z } from 'zod';
+import { boolean, z } from 'zod';
 import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
@@ -17,7 +17,16 @@ const FormSchema = z.object({
 	recipientId: z.string(),
 });
 
+const RecipientSchema = z.object({
+	id: z.string(),
+	name: z.string(),
+	semester: z.string(),
+	degree: z.string(),
+	gender: z.enum(['male', 'female'], { invalid_type_error: 'Please select a gender.' })
+});
+
 const CreateItems = FormSchema.omit({ id: true, recipientId: true });
+const CreateRecipient = RecipientSchema.omit({ id: true });
 
 export type State = {
 	errors?: {
@@ -55,4 +64,28 @@ export async function createItems(formData: FormData) {
 			CROSS JOIN Lateral (SELECT false, ${rawFormData.name}) t		
 		`;
 	}
+}
+
+export async function createRecipient(formData: FormData) {
+	const rawData = CreateRecipient.parse({
+		name: formData.get('name'),
+		semester: formData.get('semester'),
+		degree: formData.get('degree'),
+		gender: formData.get('gender')
+	});
+
+	const isMale: boolean = rawData.gender == 'male';
+
+	try {
+		await sql`
+			INSERT INTO recipients (name, semester, degree, ismale)
+			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale})
+		`;
+	}
+	catch (error) {
+		return { message: 'Database Error: failed to create Invoice.' }
+	}
+
+	revalidatePath('/dashboard/registration');
+	redirect('/dashboard/registration');
 }
