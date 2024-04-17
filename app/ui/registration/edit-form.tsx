@@ -1,22 +1,33 @@
 'use client';
 
-import { apartmentField } from '@/app/lib/definitions';
-import Link from 'next/link';
+import { AvailableItems, RecipientProfile, apartmentField } from '@/app/lib/definitions';
 import {
   CheckIcon,
   ClockIcon,
   CurrencyDollarIcon,
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 import { Button } from '@/app/ui/button';
-import { createRecipient } from '@/app/lib/itemactions';
+import { updateRecipient } from '@/app/lib/itemactions';
+import { fetchCustomers } from '@/app/lib/data';
+
 import { useFormState } from 'react-dom';
 
-export default function Form({ apartments }: { apartments: apartmentField[] }) {
+export default function EditRecipientForm({
+	recipient,
+	availableItems,
+	apartments
+}: {
+		recipient: RecipientProfile;
+		availableItems: AvailableItems[];
+		apartments: apartmentField[]
+	}) {
 	const initialState = { message: null, errors: {} };
-
+	const updateInvoiceWithId = updateRecipient.bind(null, recipient.recipientsid);
+	const [state, dispatch] = useFormState(updateInvoiceWithId, initialState);
 	return (
-		<form action={createRecipient}>
+		<form action={dispatch}>
 			<div className="rounded-md bg-gray-50 p-4 md:p-6">
 				{/* recipient Name */}
 				<div className="mb-4">
@@ -49,7 +60,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="spring"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="spring"	className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
+								<label htmlFor="spring" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
 									Spring
 								</label>
 							</div>
@@ -338,6 +349,12 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 						</div>
 					</div>
 				</fieldset>
+				{/* items */}
+				<div className="mb-4">
+					<label htmlFor="country" className="mb-2 block text-sm font-medium">
+						Selected items: {recipient.items}
+					</label>
+				</div>
 			</div>
 			<div className="mt-6 flex justify-end gap-4">
 				<Link
@@ -349,5 +366,5 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 				<Button type="submit">Create Recipient</Button>
 			</div>
 		</form>
-	);
+  );
 }

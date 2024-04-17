@@ -2,14 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\dashboard",
-    "\\app\\dashboard\\(overview)",
-    "\\app\\dashboard\\customers",
     "\\app\\lib",
-    "\\app\\ui",
-    "\\app\\ui\\invoices",
-    "\\public"
+    "\\public",
+    "\\scripts"
   ],
-  "SelectedNode": "\\app\\dashboard\\layout.tsx",
   "PreviewInSolutionExplorer": false
 }

@@ -88,10 +88,16 @@ export type InvoiceForm = {
 };
 
 export type Item = {
-	id: string;
 	isLarge: boolean;
 	name: string;
 	recipientsid: string;
+}
+
+export type AvailableItems = {
+	id: string;
+	isLarge: boolean;
+	name: string;
+	count: number;
 }
 
 export type ItemCountTable = {
@@ -114,4 +120,21 @@ export type ItemsTable = {
 export type apartmentField = {
 	id: string;
 	name: string;
+}
+
+export type RecipientProfile = {
+	recipientsid: string;
+	name: string;
+	semester: string;
+	degree: string;
+	ismale: string;
+	phone: string;
+	email: string;
+	country: string;
+	apartmentid: string;
+	address: string;
+	building: string;
+	roomateid: string;
+	roomatename: string;
+	items: string;
 }

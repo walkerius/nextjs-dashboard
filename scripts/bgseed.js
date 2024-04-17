@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS apartments (
 CREATE TABLE IF NOT EXISTS recipients (
     recipientsid UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    semester INT NOT NULL,
-	degree INT NOT NULL,
+    semester VARCHAR(255) NOT NULL,
+	degree VARCHAR(255) NOT NULL,
 	ismale BOOLEAN NOT NULL,
 	phone VARCHAR(25) NOT NULL,
 	email VARCHAR(255) NOT NULL,

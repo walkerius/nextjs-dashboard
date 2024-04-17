@@ -6,6 +6,7 @@ import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
+import { UUID } from 'crypto';
 
 const FormSchema = z.object({
 	id: z.string(),
@@ -22,7 +23,16 @@ const RecipientSchema = z.object({
 	name: z.string(),
 	semester: z.string(),
 	degree: z.string(),
-	gender: z.enum(['male', 'female'], { invalid_type_error: 'Please select a gender.' })
+	otherdegree: z.string().optional().nullable(),
+	gender: z.enum(['male', 'female'], { invalid_type_error: 'Please select a gender.' }),
+	phone: z.string(),
+	email: z.string(),
+	homecountry: z.string(),
+	apartmentid: z.string().optional().nullable(),
+	otherapartment: z.string(),
+	building: z.string(),
+	hasroommate: z.enum(['yes', 'no'], { invalid_type_error: 'Please select roommate option.' }),
+	roommatename: z.string().optional()
 });
 
 const CreateItems = FormSchema.omit({ id: true, recipientId: true });
@@ -71,21 +81,100 @@ export async function createRecipient(formData: FormData) {
 		name: formData.get('name'),
 		semester: formData.get('semester'),
 		degree: formData.get('degree'),
-		gender: formData.get('gender')
+		otherdegree: formData.get('otherdegree'),
+		gender: formData.get('gender'),
+		phone: formData.get('phone'),
+		email: formData.get('email'),
+		homecountry: formData.get('homecountry'),
+		apartmentid: formData.get('apartmentid'),
+		otherapartment: formData.get('otherapartment'),
+		building: formData.get('building'),
+		hasroommate: formData.get('roommate'),
+		roommatename: formData.get('roommatename')
 	});
 
 	const isMale: boolean = rawData.gender == 'male';
+	var semesterId: number = 0;
+	var recipient_id: string = '';
+	
 
+	if (rawData.semester == 'spring') {
+		semesterId = 1;
+	}
+	else if (rawData.semester == 'summer') {
+		semesterId = 2;
+	}
+	else if (rawData.semester == 'fall') {
+		semesterId = 3;
+	}
+	else if (rawData.semester == 'other') {
+		semesterId = 4;
+	}
+
+	console.log(isMale);
 	try {
-		await sql`
-			INSERT INTO recipients (name, semester, degree, ismale)
-			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale})
+			await sql`
+			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename)
+			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename})
+			RETURNING recipientsid
+			
 		`;
 	}
 	catch (error) {
+		console.log(error);
 		return { message: 'Database Error: failed to create Invoice.' }
 	}
-
 	revalidatePath('/dashboard/registration');
-	redirect('/dashboard/registration');
+	redirect(`/dashboard/registration/${rawData.name}/edit`);
+}
+
+export async function updateRecipient(id: string, prevState: State, formData: FormData) {
+	const rawData = CreateRecipient.parse({
+		name: formData.get('name'),
+		semester: formData.get('semester'),
+		degree: formData.get('degree'),
+		otherdegree: formData.get('otherdegree'),
+		gender: formData.get('gender'),
+		phone: formData.get('phone'),
+		email: formData.get('email'),
+		homecountry: formData.get('homecountry'),
+		apartmentid: formData.get('apartmentid'),
+		otherapartment: formData.get('otherapartment'),
+		building: formData.get('building'),
+		hasroommate: formData.get('roommate'),
+		roommatename: formData.get('roommatename')
+	});
+
+	const isMale: boolean = rawData.gender == 'male';
+	var semesterId: number = 0;
+
+
+	if (rawData.semester == 'spring') {
+		semesterId = 1;
+	}
+	else if (rawData.semester == 'summer') {
+		semesterId = 2;
+	}
+	else if (rawData.semester == 'fall') {
+		semesterId = 3;
+	}
+	else if (rawData.semester == 'other') {
+		semesterId = 4;
+	}
+
+	console.log(isMale);
+	try {
+		await sql`
+			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename)
+			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename})
+			
+			
+		`;
+	}
+	catch (error) {
+		console.log(error);
+		return { message: 'Database Error: failed to create Invoice.' }
+	}
+	revalidatePath('/dashboard/registration');
+	redirect(`/dashboard/registration/${rawData.name}/edit`);
 }

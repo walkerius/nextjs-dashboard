@@ -1,8 +1,9 @@
 import { sql } from '@vercel/postgres'
 import {
-	Item,
+	AvailableItems,
 	ItemCountTable,
-	ItemsTable
+	ItemsTable,
+	RecipientProfile
 } from './definitions';
 import { unstable_noStore as noStore } from 'next/cache';
 
@@ -70,5 +71,63 @@ export async function fetchRecipientsPages(query: string) {
 	} catch (error) {
 		console.error('Database Error:', error);
 		throw new Error('Failed to fetch total number of recipients.');
+	}
+}
+
+export async function fetchRecipientByName(name: string) {
+	noStore();
+	try {
+		console.log(name);
+		const data = await sql<RecipientProfile>`
+			SELECT
+				recipients.recipientsid, 
+				name,
+				semester,
+				degree,
+				ismale,
+				phone,
+				email,
+				country,
+				apartmentid,
+				address,
+				building,
+				roomateid,
+				roomatename,
+				itemgroup.items
+			FROM recipients 
+			LEFT JOIN (
+				SELECT recipientsid, string_agg(name || '(' || (case when islarge = true then 'large' else 'small' end) || ')', ', ') as items
+				FROM items
+				GROUP BY recipientsid
+			) itemgroup ON itemgroup.recipientsid = recipients.recipientsid
+			WHERE recipients.recipientsid = ${name};
+    `;
+
+	console.log('fpimd page'); 
+
+
+
+	return data.rows[0];
+	} catch (error) {
+		console.error('Database Error:', error);
+		throw new Error('Failed to fetch recipient.');
+	}
+}
+
+export async function fetchAvailableItems() {
+	noStore();
+	try {
+		const data = await sql<AvailableItems>`
+      select name, islarge, count(*)
+		FROM items
+		WHERE recipientsid is null
+		GROUP BY name, islarge
+    `;
+
+		const customers = data.rows;
+		return customers;
+	} catch (err) {
+		console.error('Database Error:', err);
+		throw new Error('Failed to fetch all items.');
 	}
 }
