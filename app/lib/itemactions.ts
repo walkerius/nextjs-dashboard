@@ -95,8 +95,8 @@ export async function createRecipient(formData: FormData) {
 
 	const isMale: boolean = rawData.gender == 'male';
 	var semesterId: number = 0;
-	var recipient_id: string = '';
-	
+	var recipientsId: string = '';
+
 
 	if (rawData.semester == 'spring') {
 		semesterId = 1;
@@ -113,19 +113,22 @@ export async function createRecipient(formData: FormData) {
 
 	console.log(isMale);
 	try {
-			await sql`
+		const result = await sql`
 			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename)
 			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename})
-			RETURNING recipientsid
+			RETURNING recipientsid;
 			
 		`;
+		// Access the recipientsid of the inserted row
+		recipientsId = result.rows[0].recipientsid;
+		console.log('Inserted recipient ID:', recipientsId);
 	}
 	catch (error) {
 		console.log(error);
 		return { message: 'Database Error: failed to create Invoice.' }
 	}
 	revalidatePath('/dashboard/registration');
-	redirect(`/dashboard/registration/${rawData.name}/edit`);
+	redirect(`/dashboard/registration/${recipientsId}/edit`);
 }
 
 export async function updateRecipient(id: string, prevState: State, formData: FormData) {
@@ -147,6 +150,7 @@ export async function updateRecipient(id: string, prevState: State, formData: Fo
 
 	const isMale: boolean = rawData.gender == 'male';
 	var semesterId: number = 0;
+	var recipientsId: string = '';
 
 
 	if (rawData.semester == 'spring') {
@@ -164,17 +168,20 @@ export async function updateRecipient(id: string, prevState: State, formData: Fo
 
 	console.log(isMale);
 	try {
-		await sql`
+		const result = await sql`
 			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename)
 			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename})
-			
+			RETURNING recipientsid;
 			
 		`;
+		// Access the recipientsid of the inserted row
+		recipientsId = result.rows[0].recipientsid;
+		console.log('Inserted recipient ID:', recipientsId);
 	}
 	catch (error) {
 		console.log(error);
 		return { message: 'Database Error: failed to create Invoice.' }
 	}
 	revalidatePath('/dashboard/registration');
-	redirect(`/dashboard/registration/${rawData.name}/edit`);
+	redirect(`/dashboard/registration/${recipientsId}/edit`);
 }
