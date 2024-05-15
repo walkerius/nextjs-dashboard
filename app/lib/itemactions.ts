@@ -258,7 +258,33 @@ export async function AssociateItemRecipient(formData: FormData) {
 	redirect(`/dashboard/registration/${largeItemData.recipientsId}/edit`);
 }
 
-
+export async function addItems(formData: FormData) {
+	const rawFormData = CreateItems.parse({
+		isLarge: formData.get('isLarge'),
+		name: formData.get('name'),
+		amount: formData.get('amount')
+	});
+	const isLarge: boolean = rawFormData.isLarge == 'large';
+	console.log(isLarge);
+	if (isLarge) {
+		console.log(isLarge);
+		await sql`
+			INSERT INTO items (isLarge, name)
+			SELECT t.*
+			FROM generate_series(1,${rawFormData.amount}) i
+			CROSS JOIN Lateral (SELECT true, ${rawFormData.name}) t		
+		`;
+	}
+	else {
+		console.log('second');
+		await sql`
+			INSERT INTO items (isLarge, name)
+			SELECT t.*
+			FROM generate_series(1,${rawFormData.amount}) i
+			CROSS JOIN Lateral (SELECT false, ${rawFormData.name}) t		
+		`;
+	}
+}
 
 
 
