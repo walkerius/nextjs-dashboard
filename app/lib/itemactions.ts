@@ -87,6 +87,7 @@ export async function createItems(formData: FormData) {
 			CROSS JOIN Lateral (SELECT false, ${rawFormData.name}) t		
 		`;
 	}
+	redirect(`/dashboard`);
 }
 // Function to create an apartment using validated FormData
 // Assuming this is in an API route or similar server-side context
