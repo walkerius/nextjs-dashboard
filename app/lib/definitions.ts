@@ -151,6 +151,8 @@ export type RecipientProfile = {
 export type ApartmentCountTable = {
 	id: string;
 	name: string;
+	address: string;
+	residents: number;
 }
 
 export interface ApartmentField {

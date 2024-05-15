@@ -198,11 +198,11 @@ export default function EditRecipientForm({
 									name="gender"
 									type="radio"
 									value="male"
-									defaultChecked={recipient.ismale === "male"}
+									defaultChecked={recipient.ismale === 'male'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="male" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
-									Male
+									Male test
 								</label>
 							</div>
 							<div className="flex items-center">
@@ -211,7 +211,7 @@ export default function EditRecipientForm({
 									name="gender"
 									type="radio"
 									value="female"
-									defaultChecked={recipient.ismale === "female"}
+									defaultChecked={recipient.ismale === 'female'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="female" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">

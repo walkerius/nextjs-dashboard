@@ -1,9 +1,9 @@
 import Form from '@/app/ui/registration/create-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
+import { fetchApartmentCounts } from '@/app/lib/itemdata';
 
-import { fetchCustomers } from '@/app/lib/data';
 export default async function Page() {
-	const apartments = await fetchCustomers();
+	const apartments = await fetchApartmentCounts();
 
 	return (
 		<main>

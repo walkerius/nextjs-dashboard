@@ -1,6 +1,7 @@
 import AddApartments from '@/app/ui/dashboard/create-apartments';
 import AddItems from '@/app/ui/dashboard/create-items';
 import CurrentItems from '@/app/ui/dashboard/item-counts';
+import CurrentApartments from '@/app/ui/dashboard/apartment-counts';
 import { lusitana } from '@/app/ui/fonts';
 export default async function Page() {
 	return (
@@ -19,6 +20,10 @@ export default async function Page() {
 			<div>
 				<h2>Current Items</h2>
 				<CurrentItems />
+			</div>
+			<div>
+				<h2>Current Apartments</h2>
+				<CurrentApartments />
 			</div>
 		</main>
 	);

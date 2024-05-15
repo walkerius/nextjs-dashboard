@@ -107,6 +107,7 @@ export async function createApartment(formData: FormData) {
 		console.log(error);
 		return { message: 'Database Error: failed to create new apartment.' }
 	}
+	redirect(`/dashboard`);
 }
 export async function createRecipient(formData: FormData) {
 	const rawData = CreateRecipient.parse({

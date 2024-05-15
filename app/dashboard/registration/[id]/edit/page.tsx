@@ -2,7 +2,7 @@ import Form from '@/app/ui/registration/edit-form';
 import AssociateItems from '@/app/ui/registration/associate-item';
 import AddApartments from '@/app/ui/dashboard/create-apartments';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
-import { fetchAvailableItems, fetchRecipientByName } from '@/app/lib/itemdata';
+import { fetchAvailableItems, fetchRecipientByName, fetchApartmentCounts } from '@/app/lib/itemdata';
 import { notFound } from 'next/navigation';
 import { fetchCustomers } from '../../../../lib/data';
 export default async function Page({ params }: { params: { id: string } }) {
@@ -11,7 +11,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 	const [recipient, availableitems, apartments] = await Promise.all([
 		fetchRecipientByName(id),
 		fetchAvailableItems(),
-		fetchCustomers()
+		fetchApartmentCounts()
 	]);
 	if (!recipient) {
 		notFound();

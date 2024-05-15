@@ -4,7 +4,8 @@ import {
 	AvailableItems,
 	ItemCountTable,
 	ItemsTable,
-	RecipientProfile
+	RecipientProfile,
+	ApartmentCountTable
 } from './definitions';
 import { unstable_noStore as noStore } from 'next/cache';
 import XLSX from 'xlsx';
@@ -23,6 +24,29 @@ export async function fetchItemCounts() {
 	`;
 
 	return items.rows;
+}
+
+export async function fetchApartmentCounts() {
+	noStore();
+
+	const apartments = await sql < ApartmentCountTable>`
+		select 
+			apartmentsid as id,
+			name,
+			address,
+			residents.residents,
+			count(*) as total
+		FROM apartments
+		LEFT JOIN (
+					SELECT apartmentid, COUNT(*) AS residents
+					FROM recipients
+					WHERE recipients.apartmentid is not null
+					GROUP BY recipients.apartmentid
+				) residents ON residents.apartmentid = apartments.apartmentsid
+		group by apartmentsid, name, address, residents
+	`;
+
+	return apartments.rows;
 }
 
 const ITEMS_PER_PAGE = 6;
@@ -99,7 +123,7 @@ export async function fetchRecipientByName(name: string) {
 				name,
 				semester,
 				degree,
-				ismale,
+				CASE WHEN ismale THEN 'male' ELSE 'female' END as ismale,
 				phone,
 				email,
 				country,
