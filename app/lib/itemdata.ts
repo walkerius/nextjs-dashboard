@@ -1,3 +1,4 @@
+'use server';
 import { sql } from '@vercel/postgres'
 import {
 	AvailableItems,
@@ -6,6 +7,7 @@ import {
 	RecipientProfile
 } from './definitions';
 import { unstable_noStore as noStore } from 'next/cache';
+import XLSX from 'xlsx';
 
 export async function fetchItemCounts() {
 	noStore();
@@ -29,25 +31,38 @@ export async function fetchFilteredRecipients(
 	currentPage: number,
 ) {
 	noStore();
+	console.log("breakpoint");
 	const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
 	try {
 		const invoices = await sql<ItemsTable>`
 			SELECT
-				items.itemsid,
-				CASE WHEN isLarge THEN 'Large Item' ELSE 'Small Item' END as size,
-				items.name,
-				items.recipientsid,
-				recipients.name as "recipientsname"
+				recipients.name as "recipientsname",
+				recipients.recipientsid,
+				largeitems.items as largeitems,
+				smallitems.items as smallitems,
+				recipients.address
 			FROM recipients
-				JOIN items ON items.recipientsid = recipients.recipientsid
+				LEFT JOIN (
+					SELECT recipientsid, string_agg(name, ', ') as items
+					FROM items
+					WHERE isLarge = true
+					GROUP BY recipientsid
+				) largeitems ON largeitems.recipientsid = recipients.recipientsid
+				LEFT JOIN (
+					SELECT recipientsid, string_agg(name, ', ') as items
+					FROM items
+					WHERE isLarge = false
+					GROUP BY recipientsid
+				) smallitems ON smallitems.recipientsid = recipients.recipientsid
 			WHERE
 			  recipients.name ILIKE ${`%${query}%`} OR
-			  items.name ILIKE ${`%${query}%`}
+			  largeitems.items ILIKE ${`%${query}%`} OR
+			  smallitems.items ILIKE ${`%${query}%`}
 			ORDER BY recipients.name DESC
 			LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
 		`;
-
+		console.log (invoices);
 		return invoices.rows;
 	} catch (error) {
 		console.error('Database Error:', error);
@@ -60,7 +75,7 @@ export async function fetchRecipientsPages(query: string) {
 	try {
 		const count = await sql`SELECT COUNT(*)
     FROM recipients
-    JOIN items ON items.recipientsid = recipients.recipientsid
+    LEFT JOIN items ON items.recipientsid = recipients.recipientsid
     WHERE
       recipients.name ILIKE ${`%${query}%`} OR
       items.name ILIKE ${`%${query}%`}
@@ -103,7 +118,7 @@ export async function fetchRecipientByName(name: string) {
 			WHERE recipients.recipientsid = ${name};
     `;
 
-	console.log('fpimd page'); 
+	console.log(data.rows[0]); 
 
 
 
@@ -129,5 +144,65 @@ export async function fetchAvailableItems() {
 	} catch (err) {
 		console.error('Database Error:', err);
 		throw new Error('Failed to fetch all items.');
+	}
+}
+
+export async function fetchRecipients() {
+	noStore();
+	console.log("test");
+	try {
+		const recipients = await sql<ItemsTable>`
+			SELECT
+				recipients.name as "recipientsname",
+				recipients.recipientsid,
+				largeitems.items as largeitems,
+				smallitems.items as smallitems,
+				recipients.address,
+				recipients.semester,
+				recipients.degree,
+				CASE WHEN recipients.ismale THEN 'male' ELSE 'female' END as gender,
+				recipients.phone,
+				recipients.email,
+				recipients.country,
+				apartments.name as apartment,
+				recipients.address,
+				recipients.building,
+				CASE WHEN roomateName IS NOT NULL THEN 'Yes' ELSE 'No' END as hasRoommates
+			FROM recipients
+				LEFT JOIN (
+					SELECT recipientsid, string_agg(name, ', ') as items
+					FROM items
+					WHERE isLarge = true
+					GROUP BY recipientsid
+				) largeitems ON largeitems.recipientsid = recipients.recipientsid
+				LEFT JOIN (
+					SELECT recipientsid, string_agg(name, ', ') as items
+					FROM items
+					WHERE isLarge = false
+					GROUP BY recipientsid
+				) smallitems ON smallitems.recipientsid = recipients.recipientsid
+				LEFT JOIN apartments ON apartments.apartmentsid = recipients.apartmentid
+			ORDER BY recipients.name DESC
+		`;
+		console.log(recipients.rows[0]);
+		return recipients.rows;
+	} catch (error) {
+		console.error('Database Error:', error);
+		throw new Error('Failed to fetch all.');
+	}
+}
+
+export async function exportTableToExcel() {
+	const XLSX = await import('xlsx');
+	const recipients = await fetchRecipients();
+	const workbook = XLSX.utils.book_new();
+	const worksheet = XLSX.utils.json_to_sheet(recipients);
+	XLSX.utils.book_append_sheet(workbook, worksheet, 'Recipients');
+
+	try {
+		XLSX.writeFile(workbook, 'recipients.xlsx');
+		console.log('File saved successfully.');
+	} catch (error) {
+		console.error('Error saving file:', error);
 	}
 }

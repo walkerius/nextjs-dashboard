@@ -2,33 +2,39 @@
 
 import { AvailableItems, RecipientProfile, apartmentField } from '@/app/lib/definitions';
 import {
-  CheckIcon,
-  ClockIcon,
-  CurrencyDollarIcon,
-  UserCircleIcon,
+	CheckIcon,
+	ClockIcon,
+	CurrencyDollarIcon,
+	UserCircleIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { updateRecipient } from '@/app/lib/itemactions';
+import { useFormState } from 'react-dom';
 import { fetchCustomers } from '@/app/lib/data';
 
-import { useFormState } from 'react-dom';
 
 export default function EditRecipientForm({
 	recipient,
 	availableItems,
 	apartments
 }: {
-		recipient: RecipientProfile;
-		availableItems: AvailableItems[];
-		apartments: apartmentField[]
-	}) {
+	recipient: RecipientProfile;
+	availableItems: AvailableItems[];
+	apartments: apartmentField[]
+}) {
 	const initialState = { message: null, errors: {} };
 	const updateInvoiceWithId = updateRecipient.bind(null, recipient.recipientsid);
 	const [state, dispatch] = useFormState(updateInvoiceWithId, initialState);
 	return (
 		<form action={dispatch}>
 			<div className="rounded-md bg-gray-50 p-4 md:p-6">
+				{/* items */}
+				<div className="mb-4">
+					<label htmlFor="country" className="mb-2 block text-sm font-medium">
+						Selected items: {recipient.items}
+					</label>
+				</div>
 				{/* recipient Name */}
 				<div className="mb-4">
 					<label htmlFor="name" className="mb-2 block text-sm font-medium">
@@ -40,6 +46,7 @@ export default function EditRecipientForm({
 							name="name"
 							type="string"
 							placeholder="Enter your name"
+							defaultValue={recipient.name}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 						/>
@@ -58,6 +65,7 @@ export default function EditRecipientForm({
 									name="semester"
 									type="radio"
 									value="spring"
+									defaultChecked={recipient.semester === 'spring'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="spring" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
@@ -70,6 +78,7 @@ export default function EditRecipientForm({
 									name="semester"
 									type="radio"
 									value="summer"
+									defaultChecked={recipient.semester === 'summer'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="summer" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -82,6 +91,7 @@ export default function EditRecipientForm({
 									name="semester"
 									type="radio"
 									value="fall"
+									defaultChecked={recipient.semester === 'fall'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="fall" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -94,6 +104,7 @@ export default function EditRecipientForm({
 									name="semester"
 									type="radio"
 									value="other"
+									defaultChecked={recipient.semester === 'other'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="other" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -116,6 +127,7 @@ export default function EditRecipientForm({
 									name="degree"
 									type="radio"
 									value="undergraduate"
+									defaultChecked={recipient.degree === 'undergraduate'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="undergraduate" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
@@ -128,6 +140,7 @@ export default function EditRecipientForm({
 									name="degree"
 									type="radio"
 									value="masters"
+									defaultChecked={recipient.degree === 'masters'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="masters" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -140,6 +153,7 @@ export default function EditRecipientForm({
 									name="degree"
 									type="radio"
 									value="phd"
+									defaultChecked={recipient.degree === 'phd'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="phd" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -152,6 +166,7 @@ export default function EditRecipientForm({
 									name="degree"
 									type="radio"
 									value="other"
+									defaultChecked={recipient.degree === 'other'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="other" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -162,6 +177,7 @@ export default function EditRecipientForm({
 									name="othername"
 									type="string"
 									placeholder=""
+									defaultValue={recipient.degree}
 									className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 									aria-describedby="amount-error"
 								/>
@@ -182,6 +198,7 @@ export default function EditRecipientForm({
 									name="gender"
 									type="radio"
 									value="male"
+									defaultChecked={recipient.ismale === "male"}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="male" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
@@ -194,6 +211,7 @@ export default function EditRecipientForm({
 									name="gender"
 									type="radio"
 									value="female"
+									defaultChecked={recipient.ismale === "female"}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="female" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -214,6 +232,7 @@ export default function EditRecipientForm({
 							name="phone"
 							type="string"
 							placeholder="Enter your phone number"
+							defaultValue={recipient.phone}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 						/>
@@ -230,6 +249,7 @@ export default function EditRecipientForm({
 							name="email"
 							type="string"
 							placeholder="Enter your email address"
+							defaultValue={recipient.email}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 						/>
@@ -246,6 +266,7 @@ export default function EditRecipientForm({
 							name="homecountry"
 							type="string"
 							placeholder="Enter your home country"
+							defaultValue={recipient.country}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 						/>
@@ -261,7 +282,7 @@ export default function EditRecipientForm({
 							id="apartment"
 							name="apartmentid"
 							className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-							defaultValue=""
+							defaultValue={recipient.apartmentid}
 							aria-describedby="customer-error"
 						>
 							<option value="" disabled>
@@ -286,6 +307,7 @@ export default function EditRecipientForm({
 							name="otherapartment"
 							type="string"
 							placeholder="full address"
+							defaultValue={recipient.address}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 						/>
@@ -302,6 +324,7 @@ export default function EditRecipientForm({
 							name="building"
 							type="string"
 							placeholder="building and number"
+							defaultValue={recipient.building}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 						/>
@@ -320,6 +343,7 @@ export default function EditRecipientForm({
 									name="roommate"
 									type="radio"
 									value="yes"
+									defaultChecked={recipient.roomatename !== null}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="yes" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
@@ -332,6 +356,7 @@ export default function EditRecipientForm({
 									name="roommate"
 									type="radio"
 									value="no"
+									defaultChecked={recipient.roomatename === null}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="no" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
@@ -343,18 +368,14 @@ export default function EditRecipientForm({
 								name="roommatename"
 								type="string"
 								placeholder="enter roommate name"
+								defaultValue={recipient.roomatename}
 								className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 								aria-describedby="amount-error"
 							/>
 						</div>
 					</div>
 				</fieldset>
-				{/* items */}
-				<div className="mb-4">
-					<label htmlFor="country" className="mb-2 block text-sm font-medium">
-						Selected items: {recipient.items}
-					</label>
-				</div>
+
 			</div>
 			<div className="mt-6 flex justify-end gap-4">
 				<Link
@@ -363,8 +384,8 @@ export default function EditRecipientForm({
 				>
 					Cancel
 				</Link>
-				<Button type="submit">Create Recipient</Button>
+				<Button type="submit">Update Recipient</Button>
 			</div>
 		</form>
-  );
+	);
 }

@@ -1,9 +1,10 @@
 import Form from '@/app/ui/registration/edit-form';
+import AssociateItems from '@/app/ui/registration/associate-item';
+import AddApartments from '@/app/ui/dashboard/create-apartments';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchAvailableItems, fetchRecipientByName } from '@/app/lib/itemdata';
 import { notFound } from 'next/navigation';
 import { fetchCustomers } from '../../../../lib/data';
-
 export default async function Page({ params }: { params: { id: string } }) {
 	const id = params.id;
 	console.log("page" + id);
@@ -12,11 +13,9 @@ export default async function Page({ params }: { params: { id: string } }) {
 		fetchAvailableItems(),
 		fetchCustomers()
 	]);
-
 	if (!recipient) {
 		notFound();
 	}
-
 	return (
 		<main>
 			<Breadcrumbs
@@ -29,7 +28,9 @@ export default async function Page({ params }: { params: { id: string } }) {
 					},
 				]}
 			/>
+			<AssociateItems recipient={recipient} availableItems={availableitems} />
 			<Form recipient={recipient} availableItems={availableitems} apartments={apartments} />
 		</main>
 	);
 }
+/* 			<associateItems recipientid={recipient.id}></associateItems> */

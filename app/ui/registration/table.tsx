@@ -1,8 +1,6 @@
-import Image from 'next/image';
-import { UpdateInvoice, DeleteInvoice } from '@/app/ui/invoices/buttons';
-import InvoiceStatus from '@/app/ui/invoices/status';
-import { formatDateToLocal, formatCurrency } from '@/app/lib/utils';
 import { fetchFilteredRecipients } from '@/app/lib/itemdata';
+import { DeleteRegistration, UpdateRegistration } from '@/app/ui/registration/buttons';
+import { ExportExcel } from '@/app/ui/registration/buttons';
 
 export default async function RecipientsTable({
 	query,
@@ -13,6 +11,7 @@ export default async function RecipientsTable({
 }) {
 	const recipients = await fetchFilteredRecipients(query, currentPage);
 
+
 	return (
 		<div className="mt-6 flow-root">
 			<div className="inline-block min-w-full align-middle">
@@ -20,7 +19,7 @@ export default async function RecipientsTable({
 					<div className="md:hidden">
 						{recipients?.map((recipient) => (
 							<div
-								key={recipient.itemsid}
+								key={recipient.recipientsid}
 								className="mb-2 w-full rounded-md bg-white p-4"
 							>
 								<div className="flex items-center justify-between border-b pb-4">
@@ -40,10 +39,13 @@ export default async function RecipientsTable({
 									Recipient
 								</th>
 								<th scope="col" className="px-3 py-5 font-medium">
-									Item
+									Large Items
 								</th>
 								<th scope="col" className="px-3 py-5 font-medium">
-									Item Size
+									Small Items
+								</th>
+								<th scope="col" className="px-3 py-5 font-medium">
+									Address
 								</th>
 								<th scope="col" className="relative py-3 pl-6 pr-3">
 									<span className="sr-only">Edit</span>
@@ -60,21 +62,25 @@ export default async function RecipientsTable({
 										{recipient.recipientsname}
 									</td>
 									<td className="whitespace-nowrap px-3 py-3">
-										{recipient.name}
+										{recipient.largeitems}
 									</td>
 									<td className="whitespace-nowrap px-3 py-3">
-										{recipient.size}
+										{recipient.smallitems}
+									</td>
+									<td className="whitespace-nowrap px-3 py-3">
+										{recipient.address}
 									</td>
 									<td className="whitespace-nowrap py-3 pl-6 pr-3">
 										<div className="flex justify-end gap-3">
-											<UpdateInvoice id={recipient.recipientsid} />
-											<DeleteInvoice id={recipient.recipientsid} />
+											<UpdateRegistration id={recipient.recipientsid} />
+											<DeleteRegistration id={recipient.recipientsid} />
 										</div>
 									</td>
 								</tr>
 							))}
 						</tbody>
 					</table>
+					<ExportExcel/>
 				</div>
 			</div>
 		</div>

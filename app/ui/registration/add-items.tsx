@@ -1,13 +1,23 @@
 'use client';
 
 import { Button } from '@/app/ui/button';
-import { createItems } from '@/app/lib/itemactions';
+import { addItems } from '@/app/lib/itemactions';
 
-export default function Form() {
+export default function Form({
+	largeItems,
+	smallItmes
+}: {
+	recipient: RecipientProfile;
+	availableItems: AvailableItems[];
+	apartments: apartmentField[]
+	}) {
+	const initialState = { message: null, errors: {} };
+	const updateInvoiceWithId = updateRecipient.bind(null, recipient.recipientsid);
+	const [state, dispatch] = useFormState(updateInvoiceWithId, initialState);
 	return (
-		<form action={createItems}>
-			{/* Item Name */}
-			<div className="mb-4 inline-block">
+		<form action={addItems}>
+			{/* Large Item */}
+			<div className="mb-4 inline-block">gmail
 				<label htmlFor="name" className="mb-2 block text-sm font-medium">
 					Item name
 				</label>

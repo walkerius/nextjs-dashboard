@@ -2,9 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\dashboard",
+    "\\app\\dashboard\\registration",
+    "\\app\\dashboard\\registration\\[id]",
+    "\\app\\dashboard\\registration\\[id]\\edit",
     "\\app\\lib",
-    "\\public",
-    "\\scripts"
+    "\\app\\ui",
+    "\\app\\ui\\dashboard",
+    "\\app\\ui\\registration"
   ],
+  "SelectedNode": "\\app\\dashboard\\registration\\page.tsx",
   "PreviewInSolutionExplorer": false
 }

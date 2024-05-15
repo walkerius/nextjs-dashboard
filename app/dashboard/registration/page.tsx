@@ -5,8 +5,9 @@ import { NewRegistration } from '@/app/ui/registration/buttons';
 import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
-import { fetchRecipientsPages } from '@/app/lib/itemdata';
+import { fetchRecipientsPages, fetchFilteredRecipients } from '@/app/lib/itemdata';
 import { Metadata } from 'next';
+
 
 export const metadata: Metadata = {
 	title: 'Registration',
@@ -23,6 +24,7 @@ export default async function Page({
 	const query = searchParams?.query || '';
 	const currentPage = Number(searchParams?.page) || 1;
 	const totalPages = await fetchRecipientsPages(query);
+	const recipients = await fetchFilteredRecipients(query, currentPage);
 
 	return (
 		<div className="w-full">

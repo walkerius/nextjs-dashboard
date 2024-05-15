@@ -110,11 +110,20 @@ export type ItemCountTable = {
 };
 
 export type ItemsTable = {
-	itemsid: string;
-	size: string;
-	name: string;
-	recipientsid: string;
 	recipientsname: string;
+	recipientsid: string;
+	largeitems: string;
+	smallitems: string;
+	address: string;
+	semester: string;
+	degree: string;
+	gender: string;
+	phone: string;
+	email: string;
+	country: string;
+	apartment: string;
+	building: string;
+	hasroommates: string;
 }
 
 export type apartmentField = {
@@ -137,4 +146,14 @@ export type RecipientProfile = {
 	roomateid: string;
 	roomatename: string;
 	items: string;
+}
+
+export type ApartmentCountTable = {
+	id: string;
+	name: string;
+}
+
+export interface ApartmentField {
+	name: string;
+	address: string; // Make sure this is included
 }
