@@ -95,7 +95,7 @@ export type Item = {
 
 export type AvailableItems = {
 	id: string;
-	isLarge: boolean;
+	islarge: boolean;
 	name: string;
 	count: number;
 }
