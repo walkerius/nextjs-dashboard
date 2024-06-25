@@ -44,6 +44,7 @@ const AssociateItemsSchema = z.object({
 const CreateItems = FormSchema.omit({ id: true, recipientId: true });
 const CreateApartment = ApartmentSchema;
 const CreateRecipient = RecipientSchema.omit({ id: true });
+const UpdateRecipient = RecipientSchema.omit({ id: true });
 const CreateAssociateItems = AssociateItemsSchema;
 export type State = {
 	errors?: {
@@ -158,7 +159,7 @@ export async function createRecipient(formData: FormData) {
 	redirect(`/dashboard/registration/${recipientsId}/edit`);
 }
 export async function updateRecipient(id: string, prevState: State, formData: FormData) {
-	const rawData = CreateRecipient.parse({
+	const rawData = UpdateRecipient.parse({
 		name: formData.get('name'),
 		semester: formData.get('semester'),
 		degree: formData.get('degree'),
@@ -191,21 +192,30 @@ export async function updateRecipient(id: string, prevState: State, formData: Fo
 	console.log(isMale);
 	try {
 		const result = await sql`
-			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename)
-			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename})
-			RETURNING recipientsid;
+			UPDATE recipients
+			SET
+				name = ${rawData.name},
+				semester = ${rawData.semester},
+				degree = ${rawData.degree},
+				ismale = ${isMale},
+				phone = ${rawData.phone},
+				email = ${rawData.email},
+				country = ${rawData.homecountry},
+				apartmentid = ${rawData.apartmentid},
+				address = ${rawData.otherapartment},
+				building = ${rawData.building},
+				roomatename = ${rawData.roommatename}
+			WHERE recipientsid = ${id}
 			
 		`;
-		// Access the recipientsid of the inserted row
-		recipientsId = result.rows[0].recipientsid;
-		console.log('Inserted recipient ID:', recipientsId);
+		console.log('updated recipient ID:', id);
 	}
 	catch (error) {
 		console.log(error);
 		return { message: 'Database Error: failed to create Invoice.' }
 	}
 	revalidatePath('/dashboard/registration');
-	redirect(`/dashboard/registration/${recipientsId}/edit`);
+	redirect(`/dashboard/registration/${id}/edit`);
 }
 export async function AssociateItemRecipient(formData: FormData) {
 	const largeItemData = CreateAssociateItems.parse({
