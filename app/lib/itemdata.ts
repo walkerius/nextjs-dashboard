@@ -21,6 +21,7 @@ export async function fetchItemCounts() {
 			count(*) as total
 		FROM items
 		group by isLarge, name
+		ORDER BY name asc
 	`;
 
 	return items.rows;
@@ -44,6 +45,7 @@ export async function fetchApartmentCounts() {
 					GROUP BY recipients.apartmentid
 				) residents ON residents.apartmentid = apartments.apartmentsid
 		group by apartmentsid, name, address, residents
+		ORDER BY name asc
 	`;
 
 	return apartments.rows;
@@ -103,6 +105,7 @@ export async function fetchRecipientsPages(query: string) {
     WHERE
       recipients.name ILIKE ${`%${query}%`} OR
       items.name ILIKE ${`%${query}%`}
+	ORDER BY recipients.name
   `;
 
 		const totalPages = Math.ceil(Number(count.rows[0].count) / ITEMS_PER_PAGE);
