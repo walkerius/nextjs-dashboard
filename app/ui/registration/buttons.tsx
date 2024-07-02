@@ -1,6 +1,6 @@
 import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { deleteInvoice } from '@/app/lib/action';
+import { DeleteRecipient } from '@/app/lib/itemactions';
 import { exportTableToExcel } from '@/app/lib/itemdata';
 
 export function NewRegistration() {
@@ -27,7 +27,7 @@ export function UpdateRegistration({ id }: { id: string }) {
 }
 
 export function DeleteRegistration({ id }: { id: string }) {
-	const deleteInvoiceWithId = deleteInvoice.bind(null, id);
+	const deleteInvoiceWithId = DeleteRecipient.bind(null, id);
 	return (
 		<form action={deleteInvoiceWithId}>
 			<button className="rounded-md border p-2 hover:bg-gray-100">

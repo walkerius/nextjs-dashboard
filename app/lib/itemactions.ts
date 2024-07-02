@@ -298,6 +298,27 @@ export async function addItems(formData: FormData) {
 	}
 }
 
+export async function DeleteRecipient(id: string) {
+
+	console.log('deleting ' + id);
+	try {
+		await sql`
+			UPDATE items set recipientsid = null WHERE recipientsid = ${id};
+		`;
+
+		await sql`
+			DELETE FROM recipients
+			WHERE recipientsid = ${id}
+		`;
+	}
+	catch (error) {
+		console.log('Database Error: failed to delete Invoice.' + error);
+		return { message: 'Database Error: failed to delete Invoice.' }
+	}
+
+	revalidatePath('/dashboard/registration');
+}
+
 
 
 

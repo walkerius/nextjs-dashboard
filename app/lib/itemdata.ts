@@ -85,7 +85,7 @@ export async function fetchFilteredRecipients(
 			  recipients.name ILIKE ${`%${query}%`} OR
 			  largeitems.items ILIKE ${`%${query}%`} OR
 			  smallitems.items ILIKE ${`%${query}%`}
-			ORDER BY recipients.name DESC
+			ORDER BY recipients.name ASC
 			LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
 		`;
 		console.log (invoices);
@@ -105,7 +105,7 @@ export async function fetchRecipientsPages(query: string) {
     WHERE
       recipients.name ILIKE ${`%${query}%`} OR
       items.name ILIKE ${`%${query}%`}
-	ORDER BY recipients.name
+
   `;
 
 		const totalPages = Math.ceil(Number(count.rows[0].count) / ITEMS_PER_PAGE);
@@ -209,7 +209,7 @@ export async function fetchRecipients() {
 					GROUP BY recipientsid
 				) smallitems ON smallitems.recipientsid = recipients.recipientsid
 				LEFT JOIN apartments ON apartments.apartmentsid = recipients.apartmentid
-			ORDER BY recipients.name DESC
+			ORDER BY recipients.name ASC
 		`;
 		console.log(recipients.rows[0]);
 		return recipients.rows;
