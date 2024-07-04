@@ -31,9 +31,9 @@ export default function EditRecipientForm({
 			<div className="rounded-md bg-gray-50 p-4 md:p-6">
 				{/* items */}
 				<div className="mb-4">
-					<label htmlFor="country" className="mb-2 block text-sm font-medium">
-						Selected items: {recipient.items}
-					</label>
+					{/*<label htmlFor="country" className="mb-2 block text-sm font-medium">*/}
+					{/*	Selected items: {recipient.items}*/}
+					{/*</label>*/}
 				</div>
 				{/* recipient Name */}
 				<div className="mb-4">

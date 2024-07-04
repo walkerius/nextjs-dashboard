@@ -174,6 +174,26 @@ export async function fetchAvailableItems() {
 	}
 }
 
+export async function fetchRecipientItems(recipientsId: string) {
+	noStore();
+	console.log(recipientsId);
+	try {
+		const data = await sql<AvailableItems>`
+      select itemsid as id, name, islarge
+		FROM items
+		WHERE recipientsid = ${`${recipientsId}`}
+		ORDER BY name asc
+    `;
+
+		const items = data.rows;
+		console.log(items);
+		return items;
+	} catch (err) {
+		console.error('Database Error:', err);
+		throw new Error('Failed to fetch all items.');
+	}
+}
+
 export async function fetchRecipients() {
 	noStore();
 	console.log("test");

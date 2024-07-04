@@ -319,6 +319,21 @@ export async function DeleteRecipient(id: string) {
 	revalidatePath('/dashboard/registration');
 }
 
+export async function DeleteItem(id: string, recipientsId: string) {
+
+	console.log('deleting ' + id);
+	try {
+		await sql`
+			UPDATE items set recipientsid = null WHERE itemsid = ${id};
+		`;
+	}
+	catch (error) {
+		console.log('Database Error: failed to delete item.' + error);
+		return { message: 'Database Error: failed to delete Invoice.' }
+	}
+	redirect(`/dashboard/registration/${recipientsId}/edit`);
+}
+
 
 
 

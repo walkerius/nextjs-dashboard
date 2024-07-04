@@ -1,5 +1,6 @@
 import Form from '@/app/ui/registration/edit-form';
 import AssociateItems from '@/app/ui/registration/associate-item';
+import RecipientItemTable from '@/app/ui/registration/associated-items';
 import AddApartments from '@/app/ui/dashboard/create-apartments';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchAvailableItems, fetchRecipientByName, fetchApartmentCounts } from '@/app/lib/itemdata';
@@ -29,6 +30,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 				]}
 			/>
 			<AssociateItems recipient={recipient} availableItems={availableitems} />
+			<RecipientItemTable query={id} />
 			<Form recipient={recipient} availableItems={availableitems} apartments={apartments} />
 		</main>
 	);
