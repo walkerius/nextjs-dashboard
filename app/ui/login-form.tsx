@@ -23,8 +23,9 @@ export default function LoginForm() {
         <div className="w-full">
           <div>
             <label
-              className="mb-3 mt-5 block text-xs font-medium text-gray-900"
-              htmlFor="email"
+				className="mb-3 mt-5 block text-xs font-medium text-gray-900"
+				htmlFor="email"
+				style={{ fontSize: '22px' }}
             >
               Email
             </label>
@@ -42,8 +43,9 @@ export default function LoginForm() {
           </div>
           <div className="mt-4">
             <label
-              className="mb-3 mt-5 block text-xs font-medium text-gray-900"
-              htmlFor="password"
+				className="mb-3 mt-5 block text-xs font-medium text-gray-900"
+				htmlFor="password"
+				style={{ fontSize: '22px' }}
             >
               Password
             </label>

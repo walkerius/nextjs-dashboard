@@ -19,8 +19,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 		<form action={createRecipient}>
 			<div className="rounded-md bg-gray-50 p-4 md:p-6">
 				{/* recipient Name */}
-				<div className="mb-4">
-					<label htmlFor="name" className="mb-2 block text-sm font-medium">
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="name" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Name:*
 					</label>
 					<div className="relative">
@@ -35,8 +35,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</div>
 				{/* semester */}
-				<fieldset>
-					<legend className="mb-2 block text-sm font-medium">
+				<fieldset style={{ margin: '10px' }}>
+					<legend className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Which semester did you start at Texas A&M?*
 					</legend>
 					<div className="rounded-md border border-gray-200 bg-white px-[14px] py-3">
@@ -49,8 +49,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="spring"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="spring"	className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
-									Spring
+								<label htmlFor="spring" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
+									Spring &apos;24
 								</label>
 							</div>
 							<div className="flex items-center">
@@ -61,8 +61,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="summer"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="summer" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
-									Summer
+								<label htmlFor="summer" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
+									Summer &apos;24
 								</label>
 							</div>
 							<div className="flex items-center">
@@ -73,8 +73,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="fall"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="fall" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
-									Fall
+								<label htmlFor="fall" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
+									Fall &apos;24
 								</label>
 							</div>
 							<div className="flex items-center">
@@ -85,7 +85,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="other"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="other" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
+								<label htmlFor="other" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Other
 								</label>
 							</div>
@@ -93,8 +93,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</fieldset>
 				{/* degree */}
-				<fieldset>
-					<legend className="mb-2 block text-sm font-medium">
+				<fieldset style={{ margin: '10px' }}>
+					<legend className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Which degree are you pursuing?*
 					</legend>
 					<div className="rounded-md border border-gray-200 bg-white px-[14px] py-3">
@@ -107,7 +107,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="undergraduate"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="undergraduate" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
+								<label htmlFor="undergraduate" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Undergraduate
 								</label>
 							</div>
@@ -119,7 +119,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="masters"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="masters" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
+								<label htmlFor="masters" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Masters
 								</label>
 							</div>
@@ -131,7 +131,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="phd"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="phd" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
+								<label htmlFor="phd" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									PhD
 								</label>
 							</div>
@@ -143,7 +143,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="other"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="other" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
+								<label htmlFor="other" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Other
 								</label>
 								<input
@@ -159,8 +159,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</fieldset>
 				{/* gender */}
-				<fieldset>
-					<legend className="mb-2 block text-sm font-medium">
+				<fieldset style={{ margin: '10px' }}>
+					<legend className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Gender:*
 					</legend>
 					<div className="rounded-md border border-gray-200 bg-white px-[14px] py-3">
@@ -173,7 +173,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="male"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="male" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
+								<label htmlFor="male" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Male
 								</label>
 							</div>
@@ -185,7 +185,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="female"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="female" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
+								<label htmlFor="female" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Female
 								</label>
 							</div>
@@ -193,8 +193,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</fieldset>
 				{/* phone Number */}
-				<div className="mb-4">
-					<label htmlFor="phone" className="mb-2 block text-sm font-medium">
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="phone" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						USA Phone Number:* (If you do not have a USA phone number, write your cell phone number starting with +)
 					</label>
 					<div className="relative">
@@ -209,8 +209,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</div>
 				{/* email address */}
-				<div className="mb-4">
-					<label htmlFor="email" className="mb-2 block text-sm font-medium">
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="email" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Email Address:*
 					</label>
 					<div className="relative">
@@ -225,8 +225,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</div>
 				{/* country */}
-				<div className="mb-4">
-					<label htmlFor="country" className="mb-2 block text-sm font-medium">
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Home Country:*
 					</label>
 					<div className="relative">
@@ -241,8 +241,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</div>
 				{/* apartment Name */}
-				<div className="mb-4">
-					<label htmlFor="apartment" className="mb-2 block text-sm font-medium">
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="apartment" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Apartment Name:*
 					</label>
 					<div className="relative">
@@ -265,8 +265,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</div>
 				{/* address */}
-				<div className="mb-4">
-					<label htmlFor="country" className="mb-2 block text-sm font-medium">
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						If you selected &quot;Other&quot; in the question above, type your full address, including name of apartment
 					</label>
 					<div className="relative">
@@ -281,8 +281,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</div>
 				{/* apartment */}
-				<div className="mb-4">
-					<label htmlFor="country" className="mb-2 block text-sm font-medium">
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Apartment Building & Number:*
 					</label>
 					<div className="relative">
@@ -297,7 +297,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 					</div>
 				</div>
 				{/* roommate */}
-				<fieldset>
+				<fieldset style={{ margin: '10px' }}>
 					<legend className="mb-2 block text-sm font-medium">
 						Is one or more of your roommates also getting items from the Big Giveaway today?*
 					</legend>
@@ -311,7 +311,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="yes"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="yes" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
+								<label htmlFor="yes" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Yes
 								</label>
 							</div>
@@ -323,7 +323,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									value="no"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="no" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white">
+								<label htmlFor="no" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									No
 								</label>
 							</div>

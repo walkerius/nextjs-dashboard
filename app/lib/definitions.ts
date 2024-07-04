@@ -115,6 +115,7 @@ export type ItemsTable = {
 	largeitems: string;
 	smallitems: string;
 	address: string;
+	apartmentaddress: string;
 	semester: string;
 	degree: string;
 	gender: string;
@@ -124,6 +125,7 @@ export type ItemsTable = {
 	apartment: string;
 	building: string;
 	hasroommates: string;
+	roomateName: string;
 }
 
 export type apartmentField = {

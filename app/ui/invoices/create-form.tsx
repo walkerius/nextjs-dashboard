@@ -21,7 +21,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Customer Name */}
         <div className="mb-4">
-          <label htmlFor="customer" className="mb-2 block text-sm font-medium">
+					<label htmlFor="customer" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
             Choose customer
           </label>
           <div className="relative">
@@ -55,7 +55,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
 
         {/* Invoice Amount */}
         <div className="mb-4">
-          <label htmlFor="amount" className="mb-2 block text-sm font-medium">
+		  <label htmlFor="amount" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
             Choose an amount
           </label>
           <div className="relative mt-2 rounded-md">
@@ -98,8 +98,9 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
 				className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="pending"
-                  className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
+					htmlFor="pending"
+					className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
+					style={{ fontSize: '22px' }}
                 >
                   Pending <ClockIcon className="h-4 w-4" />
                 </label>
@@ -113,8 +114,9 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
 					className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="paid"
-                  className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
+					htmlFor="paid"
+					className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
+					style={{ fontSize: '22px' }}
                 >
                   Paid <CheckIcon className="h-4 w-4" />
                 </label>

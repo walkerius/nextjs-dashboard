@@ -29,6 +29,9 @@ export default async function RecipientItemTable({
 							</div>
 						))}
 					</div>
+					<h1 style={{ fontSize: '22px' }}>
+						{recipients.length == 0 ? 'No items associated yet.' : ''}
+					</h1>
 					<table className="hidden min-w-full text-gray-900 md:table">
 						<thead className="rounded-lg text-left text-sm font-normal">
 							<tr>

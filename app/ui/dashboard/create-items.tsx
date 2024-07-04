@@ -7,8 +7,8 @@ export default function Form() {
 	return (
 		<form action={createItems}>
 			{/* Item Name */}
-			<div className="mb-4 inline-block">
-				<label htmlFor="name" className="mb-2 block text-sm font-medium">
+			<div className="mb-4 inline-block" style={{ margin: '10px' }}>
+				<label htmlFor="name" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 					Item name
 				</label>
 				<div className="relative mt-2 rounded-md">
@@ -25,8 +25,8 @@ export default function Form() {
 				</div>
 			</div>
 			{/* number of items */}
-			<div className="mb-4 inline-block">
-				<label htmlFor="amount" className="mb-2 block text-sm font-medium">
+			<div className="mb-4 inline-block" style={{ margin: '10px' }}>
+				<label htmlFor="amount" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 					Item amount
 				</label>
 				<div className="relative mt-2 rounded-md">
@@ -44,8 +44,8 @@ export default function Form() {
 				</div>
 			</div>
 			{/* size */}
-			<fieldset className="inline-block">
-				<legend className="mb-2 block text-sm font-medium">
+			<fieldset className="inline-block" style={{ margin: '10px' }}>
+				<legend className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 					Select size
 				</legend>
 				<div className="rounded-md border border-gray-200 bg-white px-[14px] py-3">
@@ -61,6 +61,7 @@ export default function Form() {
 							<label
 								htmlFor="small"
 								className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
+								style={{ fontSize: '22px' }}
 							>
 								Small
 							</label>
@@ -75,7 +76,8 @@ export default function Form() {
 							/>
 							<label
 								htmlFor="large"
-								className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
+								className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
+								style={{ fontSize: '22px' }}
 							>
 								Large
 							</label>

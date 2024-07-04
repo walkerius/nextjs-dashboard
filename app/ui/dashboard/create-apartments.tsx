@@ -16,12 +16,12 @@ export default function Form() {
 	return (
 		<form action={createApartment}>
 			{/* Apartment Name */}
-			<div className="mb-4 inline-block">
-				<label htmlFor="name" className="mb-2 block text-sm font-medium">
+			<div className="mb-4 inline-block" style={{ margin: '10px' }}>
+				<label htmlFor="name" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 					Apartment name
 				</label>
 				<div className="relative mt-2 rounded-md">
-					<div className="relative">
+					<div className="relative" style={{ width: '600px' }}>
 						<input
 							id="name"
 							name="name"
@@ -34,12 +34,12 @@ export default function Form() {
 				</div>
 			</div>
 			{/* Apartment Address */}
-			<div className="mb-4 inline-block">
-				<label htmlFor="address" className="mb-2 block text-sm font-medium">
-					Apartment Address
+			<div className="mb-4 inline-block" style={{ margin: '10px' }}>
+				<label htmlFor="address" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
+					Apartment address
 				</label>
 				<div className="relative mt-2 rounded-md">
-					<div className="relative">
+					<div className="relative" style={{ width: '600px' }}>
 						<input
 							id="address"
 							name="address"

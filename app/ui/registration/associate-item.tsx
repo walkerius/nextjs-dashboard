@@ -31,7 +31,7 @@ export default function AssociateItems({
 			<div className="rounded-md bg-gray-50 p-4 md:p-6 flex space-x-4"> {/* Flex container */}
 				{/* Large Item Dropdown */}
 				<div className="flex-1">
-					<label htmlFor="largeItems" className="mb-2 block text-sm font-medium">Choose large item</label>
+					<label htmlFor="largeItems" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>Choose large item</label>
 					<div className="relative">
 						<select
 							id="recipients"
@@ -51,7 +51,7 @@ export default function AssociateItems({
 				</div>
 				{/* Small Item Dropdown */}
 				<div className="flex-1">
-					<label htmlFor="smallItems" className="mb-2 block text-sm font-medium">Choose small item</label>
+					<label htmlFor="smallItems" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>Choose small item</label>
 					<div className="relative">
 						<select
 							id="recipients"
@@ -72,10 +72,11 @@ export default function AssociateItems({
 				<Link
 					href="/dashboard/registration"
 					className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
+					style={{ marginTop: '30px' }}
 				>
 					Cancel
 				</Link>
-				<Button type="submit">Add Items to User</Button>
+				<Button type="submit" style={{ marginTop: '30px' }}>Add Items to User</Button>
 			</div>
 		</form>
 	);

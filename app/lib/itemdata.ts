@@ -186,7 +186,7 @@ export async function fetchRecipientItems(recipientsId: string) {
     `;
 
 		const items = data.rows;
-		console.log(items);
+		console.log(items.length);
 		return items;
 	} catch (err) {
 		console.error('Database Error:', err);
@@ -212,9 +212,11 @@ export async function fetchRecipients() {
 				recipients.email,
 				recipients.country,
 				apartments.name as apartment,
+				apartments.address as apartmentaddress,
 				recipients.address,
 				recipients.building,
-				CASE WHEN roomateName IS NOT NULL THEN 'Yes' ELSE 'No' END as hasRoommates
+				CASE WHEN roomateName = '' THEN 'No' ELSE 'Yes' END as hasRoommates,
+				recipients.roomateName as roomateName
 			FROM recipients
 				LEFT JOIN (
 					SELECT recipientsid, string_agg(name, ', ') as items
@@ -231,7 +233,7 @@ export async function fetchRecipients() {
 				LEFT JOIN apartments ON apartments.apartmentsid = recipients.apartmentid
 			ORDER BY recipients.name ASC
 		`;
-		console.log(recipients.rows[0]);
+		console.log(recipients.rows[2]);
 		return recipients.rows;
 	} catch (error) {
 		console.error('Database Error:', error);

@@ -6,23 +6,23 @@ import { lusitana } from '@/app/ui/fonts';
 export default async function Page() {
 	return (
 		<main>
-			<h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+			<h1 style={{ fontSize: '30px' }}>
 				Dashboard
 			</h1>
 			<div>
-				<h2>Add new items</h2>
+				<h2 style={{ fontSize: '25px' }}>Add new items</h2>
 				<AddItems />
 			</div>
 			<div>
-				<h2>Add new apartments</h2>
+				<h2 style={{ fontSize: '25px' }}>Add new apartments</h2>
 				<AddApartments />
 			</div>
 			<div>
-				<h2>Current Items</h2>
+				<h2 style={{ fontSize: '25px' }}>Current Items</h2>
 				<CurrentItems />
 			</div>
 			<div>
-				<h2>Current Apartments</h2>
+				<h2 style={{ fontSize: '25px', marginTop: '20px' }}>Current Apartments</h2>
 				<CurrentApartments />
 			</div>
 		</main>

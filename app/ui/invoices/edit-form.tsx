@@ -27,7 +27,7 @@ export default function EditInvoiceForm({
 			<div className="rounded-md bg-gray-50 p-4 md:p-6">
 				{/* Customer Name */}
 				<div className="mb-4">
-					<label htmlFor="customer" className="mb-2 block text-sm font-medium">Choose customer</label>
+					<label htmlFor="customer" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>Choose customer</label>
 					<div className="relative">
 						<select
 							id="customer"
@@ -56,7 +56,7 @@ export default function EditInvoiceForm({
 
 				{/* Invoice Amount */}
 				<div className="mb-4">
-					<label htmlFor="amount" className="mb-2 block text-sm font-medium">
+					<label htmlFor="amount" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Choose an amount
 					</label>
 					<div className="relative mt-2 rounded-md">
@@ -102,6 +102,7 @@ export default function EditInvoiceForm({
 								<label
 									htmlFor="pending"
 									className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
+									style={{ fontSize: '22px' }}
 								>
 									Pending <ClockIcon className="h-4 w-4" />
 								</label>
@@ -118,6 +119,7 @@ export default function EditInvoiceForm({
 								<label
 									htmlFor="paid"
 									className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
+									style={{ fontSize: '22px' }}
 								>
 									Paid <CheckIcon className="h-4 w-4" />
 								</label>
