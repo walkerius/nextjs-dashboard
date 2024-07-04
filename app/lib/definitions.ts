@@ -125,7 +125,7 @@ export type ItemsTable = {
 	apartment: string;
 	building: string;
 	hasroommates: string;
-	roomateName: string;
+	roomatename: string;
 }
 
 export type apartmentField = {

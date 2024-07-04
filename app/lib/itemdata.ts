@@ -216,7 +216,7 @@ export async function fetchRecipients() {
 				recipients.address,
 				recipients.building,
 				CASE WHEN roomateName = '' THEN 'No' ELSE 'Yes' END as hasRoommates,
-				recipients.roomateName as roomateName
+				recipients.roomateName as roomatename
 			FROM recipients
 				LEFT JOIN (
 					SELECT recipientsid, string_agg(name, ', ') as items

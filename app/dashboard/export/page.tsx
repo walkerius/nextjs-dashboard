@@ -10,7 +10,7 @@ export default async function Page() {
 			</div>
 			{recipients.map((recipient) => (
 				<div key={recipient.recipientsid}>
-					{recipient.recipientsname} | {recipient.largeitems} | {recipient.smallitems} | {recipient.semester} | {recipient.degree} | {recipient.gender} | {recipient.phone} | {recipient.email} | {recipient.country} | {recipient.apartment} | {recipient.apartmentaddress} | {recipient.building} | {recipient.address} | {recipient.hasroommates} | {recipient.roomateName}
+					{recipient.recipientsname} | {recipient.largeitems} | {recipient.smallitems} | {recipient.semester} | {recipient.degree} | {recipient.gender} | {recipient.phone} | {recipient.email} | {recipient.country} | {recipient.apartment} | {recipient.apartmentaddress} | {recipient.building} | {recipient.address} | {recipient.hasroommates} | {recipient.roomatename}
 				</div>
 			))}
 		</main>
