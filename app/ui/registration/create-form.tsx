@@ -258,7 +258,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 							</option>
 							{apartments.map((apartment) => (
 								<option key={apartment.id} value={apartment.id}>
-									{apartment.name}
+									{apartment.name} | {apartment.address}
 								</option>
 							))}
 						</select>

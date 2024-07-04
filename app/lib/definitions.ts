@@ -131,6 +131,7 @@ export type ItemsTable = {
 export type apartmentField = {
 	id: string;
 	name: string;
+	address: string;
 }
 
 export type RecipientProfile = {
