@@ -31,6 +31,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 							placeholder="Enter your name"
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -48,6 +49,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									type="radio"
 									value="spring"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="spring" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Spring &apos;24
@@ -106,6 +108,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									type="radio"
 									value="undergraduate"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="undergraduate" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Undergraduate
@@ -172,6 +175,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									type="radio"
 									value="male"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="male" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Male
@@ -205,6 +209,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 							placeholder="Enter your phone number"
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -221,6 +226,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 							placeholder="Enter your email address"
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -237,6 +243,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 							placeholder="Enter your home country"
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -252,6 +259,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 							className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							defaultValue=""
 							aria-describedby="customer-error"
+							required
 						>
 							<option value="" disabled>
 								select an apartment
@@ -293,6 +301,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 							placeholder="building and number"
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
+							maxLength={8}
 						/>
 					</div>
 				</div>
@@ -310,6 +320,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 									type="radio"
 									value="yes"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="yes" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Yes

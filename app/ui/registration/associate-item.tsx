@@ -40,7 +40,11 @@ export default function AssociateItems({
 							aria-describedby="largeItems-error"
 						>
 							<option value="" >Select a large item</option>
-							{availableItems.filter(item => item.islarge).map((item) => (
+							{availableItems.filter(item => item.islarge).sort((a, b) => {
+								if (a.name < b.name) return -1;
+								if (a.name > b.name) return 1;
+								return 0;
+							}).map((item) => (
 								<option key={item.name} value={item.name}>
 									{item.name}
 								</option>
@@ -60,7 +64,11 @@ export default function AssociateItems({
 							aria-describedby="smallItems-error"
 						>
 							<option value="" >Select a small item</option>
-							{availableItems.filter(item => !item.islarge).map((item) => (
+							{availableItems.filter(item => !item.islarge).sort((a, b) => {
+								if (a.name < b.name) return -1;
+								if (a.name > b.name) return 1;
+								return 0;
+							}).map((item) => (
 								<option key={item.name} value={item.name}>
 									{item.name}
 								</option>

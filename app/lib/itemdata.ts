@@ -45,7 +45,7 @@ export async function fetchApartmentCounts() {
 					GROUP BY recipients.apartmentid
 				) residents ON residents.apartmentid = apartments.apartmentsid
 		group by apartmentsid, name, address, residents
-		ORDER BY name asc
+		ORDER BY CASE WHEN name = 'Other' THEN 0 ELSE 1 END, name asc
 	`;
 
 	return apartments.rows;

@@ -44,6 +44,7 @@ export default function EditRecipientForm({
 							defaultValue={recipient.name}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -62,6 +63,7 @@ export default function EditRecipientForm({
 									value="spring"
 									defaultChecked={recipient.semester === 'spring'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="spring" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Spring &apos;24
@@ -124,6 +126,7 @@ export default function EditRecipientForm({
 									value="undergraduate"
 									defaultChecked={recipient.degree === 'undergraduate'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="undergraduate" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Undergraduate
@@ -195,6 +198,7 @@ export default function EditRecipientForm({
 									value="male"
 									defaultChecked={recipient.ismale === 'male'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="male" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Male test
@@ -230,6 +234,7 @@ export default function EditRecipientForm({
 							defaultValue={recipient.phone}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -247,6 +252,7 @@ export default function EditRecipientForm({
 							defaultValue={recipient.email}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -264,6 +270,7 @@ export default function EditRecipientForm({
 							defaultValue={recipient.country}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
 						/>
 					</div>
 				</div>
@@ -279,6 +286,7 @@ export default function EditRecipientForm({
 							className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							defaultValue={recipient.apartmentid}
 							aria-describedby="customer-error"
+							required
 						>
 							<option value="" disabled>
 								select an apartment
@@ -322,6 +330,8 @@ export default function EditRecipientForm({
 							defaultValue={recipient.building}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
+							required
+							maxLength={8}
 						/>
 					</div>
 				</div>
@@ -340,6 +350,7 @@ export default function EditRecipientForm({
 									value="yes"
 									defaultChecked={recipient.roomatename !== ''}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+									required
 								/>
 								<label htmlFor="yes" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Yes
