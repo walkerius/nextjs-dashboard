@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { AssociateItemRecipient } from '@/app/lib/itemactions';
 import { useFormState } from 'react-dom';
+import React from 'react';
 export default function AssociateItems({
 	recipient,
 	availableItems,
@@ -18,6 +19,14 @@ export default function AssociateItems({
 	availableItems: AvailableItems[];
 }) {
 	const initialState = { message: null, errors: {} };
+
+	const formRef = React.useRef<HTMLFormElement>(null);
+
+	if (formRef.current) {
+		formRef.current.reset();
+	}
+
+
 	return (
 		<form action={AssociateItemRecipient}>
 			<div className='hidden'>
@@ -39,7 +48,7 @@ export default function AssociateItems({
 							className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-none placeholder:text-gray-500"
 							aria-describedby="largeItems-error"
 						>
-							<option value="" >Select a large item</option>
+							<option value="">Select a large item</option>
 							{availableItems.filter(item => item.islarge).sort((a, b) => {
 								if (a.name < b.name) return -1;
 								if (a.name > b.name) return 1;

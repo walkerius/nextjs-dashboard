@@ -3,14 +3,14 @@
     "",
     "\\app",
     "\\app\\dashboard",
-    "\\app\\dashboard\\customers",
-    "\\app\\export",
+    "\\app\\dashboard\\registration",
+    "\\app\\dashboard\\registration\\[id]",
+    "\\app\\dashboard\\registration\\[id]\\edit",
     "\\app\\ui",
-    "\\app\\ui\\dashboard",
-    "\\app\\ui\\invoices",
+    "\\app\\ui\\registration",
     "\\public",
     "\\scripts"
   ],
-  "SelectedNode": "\\app\\ui\\invoices\\create-form.tsx",
+  "SelectedNode": "\\app\\ui\\registration\\associate-item.tsx",
   "PreviewInSolutionExplorer": false
 }
