@@ -339,11 +339,11 @@ export async function	ResetDatabase() {
 	console.log('Resetting DB ');
 	try {
 		await sql`
-			TRUNCATE customers;
+			TRUNCATE items;
 		`;
 
 		await sql`
-			TRUNCATE revenue;
+			TRUNCATE recipients;
 		`;
 	}
 	catch (error) {
