@@ -350,8 +350,7 @@ export async function	ResetDatabase() {
 		console.log('Database Error: failed to reset db.' + error);
 		return { message: 'Database Error: failed to reset db.' }
 	}
-
-	revalidatePath('/dashboard/registration');
+	redirect(`/dashboard`);
 }
 
 
