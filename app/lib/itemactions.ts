@@ -334,6 +334,26 @@ export async function DeleteItem(id: string, recipientsId: string) {
 	redirect(`/dashboard/registration/${recipientsId}/edit`);
 }
 
+export async function	ResetDatabase() {
+
+	console.log('Resetting DB ');
+	try {
+		await sql`
+			TRUNCATE customers;
+		`;
+
+		await sql`
+			TRUNCATE revenue;
+		`;
+	}
+	catch (error) {
+		console.log('Database Error: failed to reset db.' + error);
+		return { message: 'Database Error: failed to reset db.' }
+	}
+
+	revalidatePath('/dashboard/registration');
+}
+
 
 
 

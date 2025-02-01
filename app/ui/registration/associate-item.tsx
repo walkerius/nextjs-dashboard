@@ -28,7 +28,10 @@ export default function AssociateItems({
 
 
 	return (
-		<form action={AssociateItemRecipient}>
+		<form action={async (formData) => {
+			await AssociateItemRecipient(formData);
+			formRef.current?.reset();
+		}}>
 			<div className='hidden'>
 				<input
 					id="recipients"
@@ -47,8 +50,9 @@ export default function AssociateItems({
 							name="largeItemId"
 							className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-none placeholder:text-gray-500"
 							aria-describedby="largeItems-error"
+							defaultValue={"0"}
 						>
-							<option value="">Select a large item</option>
+							<option value="0" selected={true }>Select a large item</option>
 							{availableItems.filter(item => item.islarge).sort((a, b) => {
 								if (a.name < b.name) return -1;
 								if (a.name > b.name) return 1;
@@ -71,8 +75,9 @@ export default function AssociateItems({
 							name="smallItemId"
 							className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-none placeholder:text-gray-500"
 							aria-describedby="smallItems-error"
+							defaultValue={"0"}
 						>
-							<option value="" >Select a small item</option>
+							<option value="0" >Select a small item</option>
 							{availableItems.filter(item => !item.islarge).sort((a, b) => {
 								if (a.name < b.name) return -1;
 								if (a.name > b.name) return 1;

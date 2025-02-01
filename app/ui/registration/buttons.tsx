@@ -39,7 +39,6 @@ export function DeleteRegistration({ id }: { id: string }) {
 }
 
 export function RemoveItem({ id, recipientsId }: { id: string, recipientsId: string }) {
-	console.log('removing item' + recipientsId);
 	const deleteInvoiceWithId = DeleteItem.bind(null, id, recipientsId);
 	return (
 		<form action={deleteInvoiceWithId}>

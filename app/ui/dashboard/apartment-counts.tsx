@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { Button } from '@/app/ui/button';
 import { fetchApartmentCounts } from '@/app/lib/itemdata';
 import { ItemCountTable } from '../../lib/definitions';
+import { ResetDatabase } from '@/app/lib/itemactions';
 
 export default async function ApartmentsTable() {
 	const apartments = await fetchApartmentCounts();
@@ -64,6 +66,13 @@ export default async function ApartmentsTable() {
 						</tbody>
 					</table>
 				</div>
+			</div>
+			<div>
+				<form action={ResetDatabase}>
+					<div className="mt-6 gap-4 inline-block">
+						<Button type="submit">Reset Data</Button>
+					</div>
+				</form>
 			</div>
 		</div>
 	);
