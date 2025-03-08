@@ -126,6 +126,7 @@ export type ItemsTable = {
 	building: string;
 	hasroommates: string;
 	roomatename: string;
+	creation: string;
 }
 
 export type apartmentField = {
@@ -137,6 +138,7 @@ export type apartmentField = {
 export type RecipientProfile = {
 	recipientsid: string;
 	name: string;
+	createDate: Date;
 	semester: string;
 	degree: string;
 	ismale: string;

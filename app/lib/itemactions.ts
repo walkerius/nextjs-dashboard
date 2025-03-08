@@ -34,7 +34,8 @@ const RecipientSchema = z.object({
 	otherapartment: z.string(),
 	building: z.string(),
 	hasroommate: z.enum(['yes', 'no'], { invalid_type_error: 'Please select roommate option.' }),
-	roommatename: z.string().optional()
+	roommatename: z.string().optional(),
+	apartmentnumber: z.string()
 });
 const AssociateItemsSchema = z.object({
 	largeItemId: z.string().optional().nullable(),
@@ -123,6 +124,7 @@ export async function createRecipient(formData: FormData) {
 		apartmentid: formData.get('apartmentid'),
 		otherapartment: formData.get('otherapartment'),
 		building: formData.get('building'),
+		apartmentnumber: formData.get('apartmentnumber'),
 		hasroommate: formData.get('roommate'),
 		roommatename: formData.get('roommatename')
 	});
@@ -144,8 +146,8 @@ export async function createRecipient(formData: FormData) {
 	console.log(isMale);
 	try {
 		const result = await sql`
-			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename)
-			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename})
+			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename, apartmentnumber)
+			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename}, ${rawData.apartmentnumber})
 			RETURNING recipientsid;			
 		`;
 		// Access the recipientsid of the inserted row

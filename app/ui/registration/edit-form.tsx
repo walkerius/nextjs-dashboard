@@ -316,18 +316,35 @@ export default function EditRecipientForm({
 						/>
 					</div>
 				</div>
-				{/* apartment */}
+				{/* apartment building */}
 				<div className="mb-4" style={{ margin: '10px' }}>
 					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
-						Apartment Building & Number:*
+						Apartment Building:*
 					</label>
 					<div className="relative">
 						<input
 							id="building"
 							name="building"
 							type="string"
-							placeholder="building and number"
-							defaultValue={recipient.building}
+							placeholder="apartment building"
+							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
+							aria-describedby="amount-error"
+							required
+							maxLength={8}
+						/>
+					</div>
+				</div>
+				{/* apartment number */}
+				<div className="mb-4" style={{ margin: '10px' }}>
+					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
+						Apartment Number:*
+					</label>
+					<div className="relative">
+						<input
+							id="apartmentnumber"
+							name="apartmentnumber"
+							type="string"
+							placeholder="apartment number"
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 							required

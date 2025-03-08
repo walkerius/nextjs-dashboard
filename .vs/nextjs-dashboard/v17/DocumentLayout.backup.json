@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\Test vercel\\nextjs-dashboard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemactions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\itemactions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -75,6 +67,10 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\definitions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -129,6 +125,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\associate-item.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associated-items.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -206,11 +206,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 48,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\apartments\\page.tsx",
               "RelativeDocumentMoniker": "app\\dashboard\\apartments\\page.tsx",
@@ -223,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -236,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": ".env",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -249,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "next-env.d.ts",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\next-env.d.ts",
               "RelativeDocumentMoniker": "next-env.d.ts",
@@ -262,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "auth.config.ts",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\auth.config.ts",
               "RelativeDocumentMoniker": "auth.config.ts",
@@ -275,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "auth.ts",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\auth.ts",
               "RelativeDocumentMoniker": "auth.ts",
@@ -288,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "table.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\customers\\table.tsx",
               "RelativeDocumentMoniker": "app\\ui\\customers\\table.tsx",
@@ -301,13 +301,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "itemdata.ts",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemdata.ts",
               "RelativeDocumentMoniker": "app\\lib\\itemdata.ts",
               "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemdata.ts",
               "RelativeToolTip": "app\\lib\\itemdata.ts",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAuwNsAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAANQAAAAAAAAAAAAuwNsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-04-08T23:43:43.791Z",
               "EditorCaption": ""
@@ -353,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "definitions.ts",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\definitions.ts",
               "RelativeDocumentMoniker": "app\\lib\\definitions.ts",
@@ -431,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "action.ts",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\action.ts",
               "RelativeDocumentMoniker": "app\\lib\\action.ts",
@@ -457,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "placeholder-data.js",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\placeholder-data.js",
               "RelativeDocumentMoniker": "app\\lib\\placeholder-data.js",
@@ -470,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "associate-item.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx",
               "RelativeDocumentMoniker": "app\\ui\\registration\\associate-item.tsx",
@@ -483,20 +483,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "create-form.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx",
               "RelativeDocumentMoniker": "app\\ui\\registration\\create-form.tsx",
               "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx",
               "RelativeToolTip": "app\\ui\\registration\\create-form.tsx",
-              "ViewState": "AgIAAB0BAAAAAAAAAAAAACEBAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAACMBAAAAAAAAAAAAADoBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-04-09T00:43:00.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "next.config.js",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\next.config.js",
               "RelativeDocumentMoniker": "next.config.js",
@@ -535,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\customers\\page.tsx",
               "RelativeDocumentMoniker": "app\\dashboard\\customers\\page.tsx",
@@ -548,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\export\\page.tsx",
               "RelativeDocumentMoniker": "app\\dashboard\\export\\page.tsx",
@@ -587,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\apartments\\page.tsx",
               "RelativeDocumentMoniker": "app\\apartments\\page.tsx",
@@ -600,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "create-apartments.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-apartments.tsx",
               "RelativeDocumentMoniker": "app\\ui\\dashboard\\create-apartments.tsx",
@@ -613,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "apartment-counts.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\apartment-counts.tsx",
               "RelativeDocumentMoniker": "app\\ui\\dashboard\\apartment-counts.tsx",
@@ -639,20 +639,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 31,
               "Title": "edit-form.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx",
               "RelativeDocumentMoniker": "app\\ui\\registration\\edit-form.tsx",
               "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx",
               "RelativeToolTip": "app\\ui\\registration\\edit-form.tsx",
-              "ViewState": "AgIAAEMBAAAAAAAAAAAuwFYBAAAMAAAAAAAAAA==",
+              "ViewState": "AQIAAP8AAAAAAAAAAAAAACQBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-04-17T01:09:48.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\[id]\\edit\\page.tsx",
               "RelativeDocumentMoniker": "app\\dashboard\\registration\\[id]\\edit\\page.tsx",
@@ -665,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "bgseed.js",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\scripts\\bgseed.js",
               "RelativeDocumentMoniker": "scripts\\bgseed.js",
@@ -678,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "seed.js",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\scripts\\seed.js",
               "RelativeDocumentMoniker": "scripts\\seed.js",
@@ -704,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\(overview)\\page.tsx",
               "RelativeDocumentMoniker": "app\\dashboard\\(overview)\\page.tsx",
@@ -730,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\create\\page.tsx",
               "RelativeDocumentMoniker": "app\\dashboard\\registration\\create\\page.tsx",
@@ -756,7 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "nav-links.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\nav-links.tsx",
               "RelativeDocumentMoniker": "app\\ui\\dashboard\\nav-links.tsx",
@@ -769,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "sidenav.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\sidenav.tsx",
               "RelativeDocumentMoniker": "app\\ui\\dashboard\\sidenav.tsx",
@@ -782,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "table.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\table.tsx",
               "RelativeDocumentMoniker": "app\\ui\\registration\\table.tsx",
@@ -795,7 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "page.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\page.tsx",
               "RelativeDocumentMoniker": "app\\dashboard\\registration\\page.tsx",
@@ -808,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "buttons.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\buttons.tsx",
               "RelativeDocumentMoniker": "app\\ui\\registration\\buttons.tsx",
@@ -825,13 +825,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "itemactions.ts",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemactions.ts",
               "RelativeDocumentMoniker": "app\\lib\\itemactions.ts",
               "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemactions.ts",
               "RelativeToolTip": "app\\lib\\itemactions.ts",
-              "ViewState": "AgIAACABAAAAAAAAAAAAACUAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-04-09T00:44:38.799Z",
               "EditorCaption": ""
@@ -859,7 +859,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "create-items.tsx",
               "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-items.tsx",
               "RelativeDocumentMoniker": "app\\ui\\dashboard\\create-items.tsx",

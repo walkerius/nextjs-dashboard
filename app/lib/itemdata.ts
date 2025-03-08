@@ -216,7 +216,8 @@ export async function fetchRecipients() {
 				recipients.address,
 				recipients.building,
 				CASE WHEN roomateName = '' THEN 'No' ELSE 'Yes' END as hasRoommates,
-				recipients.roomateName as roomatename
+				recipients.roomateName as roomatename,
+				to_char("createDate"::timestamp, 'MM/DD/YY HH24:MI:SS') as creation
 			FROM recipients
 				LEFT JOIN (
 					SELECT recipientsid, string_agg(name, ', ') as items
@@ -233,7 +234,7 @@ export async function fetchRecipients() {
 				LEFT JOIN apartments ON apartments.apartmentsid = recipients.apartmentid
 			ORDER BY recipients.name ASC
 		`;
-		console.log(recipients.rows[2]);
+		console.log(recipients.rows[1]);
 		return recipients.rows;
 	} catch (error) {
 		console.error('Database Error:', error);
