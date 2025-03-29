@@ -136,7 +136,8 @@ export async function fetchRecipientByName(name: string) {
 				roomateid,
 				roomatename,
 				itemgroup.items,
-				CASE WHEN married THEN 'true' ELSE 'false' END as married
+				CASE WHEN married THEN 'true' ELSE 'false' END as married,
+				recipients.apartment
 			FROM recipients 
 			LEFT JOIN (
 				SELECT recipientsid, string_agg(name || '(' || (case when islarge = true then 'large' else 'small' end) || ')', ', ') as items
@@ -225,14 +226,15 @@ export async function fetchRecipients() {
 				recipients.phone,
 				recipients.email,
 				recipients.country,
-				apartments.name as apartment,
+				CASE WHEN apartments.name IS NOT NULL THEN apartments.name ELSE recipients.apartment END as apartment,
 				apartments.address as apartmentaddress,
 				recipients.address,
 				recipients.building,
 				CASE WHEN roomateName = '' THEN 'No' ELSE 'Yes' END as hasRoommates,
 				recipients.roomateName as roomatename,
 				to_char("createDate"::timestamp, 'MM/DD/YY HH24:MI:SS') as creation,
-				CASE WHEN recipients.married THEN 'married' ELSE 'not married' END as married
+				CASE WHEN recipients.married THEN 'married' ELSE 'not married' END as married,
+				recipients.apartment
 			FROM recipients
 				LEFT JOIN (
 					SELECT recipientsid, string_agg(name, ', ') as items

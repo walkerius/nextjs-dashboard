@@ -36,7 +36,8 @@ const RecipientSchema = z.object({
 	hasroommate: z.enum(['yes', 'no'], { invalid_type_error: 'Please select roommate option.' }),
 	roommatename: z.string().optional(),
 	apartmentnumber: z.string(),
-	married: z.enum(['yes', 'no'], { invalid_type_error: 'Please select married option.' })
+	married: z.enum(['yes', 'no'], { invalid_type_error: 'Please select married option.' }),
+	address: z.string().optional().nullable()
 });
 const AssociateItemsSchema = z.object({
 	largeItemId: z.string().optional().nullable(),
@@ -129,7 +130,8 @@ export async function createRecipient(formData: FormData) {
 		apartmentnumber: formData.get('apartmentnumber'),
 		hasroommate: formData.get('roommate'),
 		roommatename: formData.get('roommatename'),
-		married: formData.get('married')
+		married: formData.get('married'),
+		address: formData.get('address')
 	});
 	const isMale: boolean = rawData.gender == 'male';
 	var semesterId: number = 0;
@@ -149,8 +151,8 @@ export async function createRecipient(formData: FormData) {
 	console.log(isMale);
 	try {
 		const result = await sql`
-			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename, apartmentnumber, married)
-			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename}, ${rawData.apartmentnumber}, ${rawData.married})
+			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename, apartmentnumber, married, apartment)
+			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.address}, ${rawData.building}, ${rawData.roommatename}, ${rawData.apartmentnumber}, ${rawData.married}, ${rawData.otherapartment})
 			RETURNING recipientsid;			
 		`;
 		// Access the recipientsid of the inserted row

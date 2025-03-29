@@ -275,12 +275,28 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 				{/* address */}
 				<div className="mb-4" style={{ margin: '10px' }}>
 					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
-						If you selected &quot;Other&quot; in the question above, type your full address, including name of apartment
+						If you selected &quot;Other&quot; or &quot;Unlisted&quot; in the question above, type your full address, including name of apartment
 					</label>
 					<div className="relative">
+						<label htmlFor="apartment" className="mb-2 block text-sm font-medium" style={{ fontSize: '16px' }}>
+							Apartment name
+						</label>
+						<input
+							id="apartment"
+							name="otherapartment"
+							type="string"
+							placeholder="apartment name"
+							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
+							aria-describedby="amount-error"
+						/>
+					</div>
+					<div className="relative">
+						<label htmlFor="address" className="mb-2 block text-sm font-medium" style={{ fontSize: '16px' }}>
+							Address
+						</label>
 						<input
 							id="address"
-							name="otherapartment"
+							name="address"
 							type="string"
 							placeholder="full address"
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"

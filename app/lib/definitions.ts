@@ -153,6 +153,7 @@ export type RecipientProfile = {
 	roomatename: string;
 	items: string;
 	married: string;
+	apartment: string;
 }
 
 export type ApartmentCountTable = {
