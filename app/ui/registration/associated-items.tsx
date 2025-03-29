@@ -1,4 +1,6 @@
-import { fetchRecipientItems } from '@/app/lib/itemdata';
+
+
+import { fetchRecipientItems, fetchNotes } from '@/app/lib/itemdata';
 import { RemoveItem } from '@/app/ui/registration/buttons';
 
 export default async function RecipientItemTable({
@@ -7,6 +9,7 @@ export default async function RecipientItemTable({
 		query: string;
 }) {
 	const recipients = await fetchRecipientItems(query);
+	const notes = await fetchNotes(query);
 
 
 	return (
@@ -32,6 +35,9 @@ export default async function RecipientItemTable({
 					<h1 style={{ fontSize: '22px' }}>
 						{recipients.length == 0 ? 'No items associated yet.' : 'Current Items'}
 					</h1>
+					<div>
+						<label>{notes}</label>						 
+					</div>
 					<table className="hidden min-w-full text-gray-900 md:table">
 						<thead className="rounded-lg text-left text-sm font-normal">
 							<tr>

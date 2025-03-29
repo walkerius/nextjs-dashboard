@@ -42,6 +42,7 @@ const AssociateItemsSchema = z.object({
 	largeItemId: z.string().optional().nullable(),
 	smallItemId: z.string().optional().nullable(),
 	recipientsId: z.string().optional().nullable(),
+	notes: z.string().optional().nullable()
 })
 const CreateItems = FormSchema.omit({ id: true, recipientId: true });
 const CreateApartment = ApartmentSchema;
@@ -228,23 +229,31 @@ export async function AssociateItemRecipient(formData: FormData) {
 		smallItemId: formData.get('smallItemId') as string,
 		largeItemId: formData.get('largeItemId') as string,
 		recipientsId: formData.get('recipientsId') as string,
+		notes: formData.get('notes') as string
 	});
 
 	try {
 		console.log(largeItemData);
 		if (largeItemData.largeItemId != '') {
 			await sql`
-			update items
-			set recipientsid = ${largeItemData.recipientsId}
-			WHERE itemsid = (
-				SELECT itemsid
-				FROM items
-				WHERE items.recipientsid IS NULL AND ${largeItemData.largeItemId} = items.name
-				ORDER BY itemsid
-				LIMIT 1
-			);			
-		
-		`;
+				update items
+				set recipientsid = ${largeItemData.recipientsId}
+				WHERE itemsid = (
+					SELECT itemsid
+					FROM items
+					WHERE items.recipientsid IS NULL AND ${largeItemData.largeItemId} = items.name
+					ORDER BY itemsid
+					LIMIT 1
+				);
+			`;
+			;
+
+			await sql`
+				UPDATE recipients
+				SET notes = ${largeItemData.notes}
+				WHERE recipientsid = ${largeItemData.recipientsId}
+			`;
+
 			console.log('Items associated successfully with large item:', largeItemData.recipientsId);
 		}
 

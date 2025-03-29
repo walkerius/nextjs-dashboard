@@ -91,15 +91,34 @@ export default function AssociateItems({
 						<UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
 					</div>
 				</div>
+			</div>
+			{/* notes */}
+			<div className="mb-4" style={{ margin: '10px' }}>
+				<label htmlFor="name" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
+					Notes:
+				</label>
+				<div className="relative">
+					<input
+						id="notes"
+						name="notes"
+						type="string"
+						placeholder="Enter any special notes"
+						className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
+						aria-describedby="amount-error"
+						required
+					/>
+				</div>
+			</div>
+			<div className="rounded-md bg-gray-50 p-4 md:p-6 flex space-x-4"> {/* Flex container */}
 				<Link
 					href="/dashboard/registration"
-					className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
-					style={{ marginTop: '30px' }}
+				className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
+				style={{ width: '150px' }}
 				>
 					Cancel
 				</Link>
-				<Button type="submit" style={{ marginTop: '30px' }}>Add Items to User</Button>
-			</div>
+				<Button type="submit" style={{ marginTop: '3px' }}>Add Items to User</Button>
+				</div>
 		</form>
 	);
 

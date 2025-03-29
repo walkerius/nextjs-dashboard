@@ -195,6 +195,19 @@ export async function fetchRecipientItems(recipientsId: string) {
 	}
 }
 
+export async function fetchNotes(recipientsId: string) {
+	noStore();
+
+	try {
+		const notes = await sql`SELECT notes FROM recipients WHERE recipientsid = ${`${recipientsId}`} `;
+		console.log(notes);
+		return notes.rows[0].notes;
+	} catch (err) {
+		console.error('Database Error:', err);
+		throw new Error('Failed to fetch notes.');
+	}
+}
+
 export async function fetchRecipients() {
 	noStore();
 	console.log("test");
