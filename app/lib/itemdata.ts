@@ -45,7 +45,7 @@ export async function fetchApartmentCounts() {
 					GROUP BY recipients.apartmentid
 				) residents ON residents.apartmentid = apartments.apartmentsid
 		group by apartmentsid, name, address, residents
-		ORDER BY CASE WHEN name = 'Other' THEN 0 ELSE 1 END, name asc
+		ORDER BY CASE WHEN name = 'Unlisted Apartment' THEN 0 ELSE 1 END, name asc
 	`;
 
 	return apartments.rows;
@@ -135,7 +135,8 @@ export async function fetchRecipientByName(name: string) {
 				building,
 				roomateid,
 				roomatename,
-				itemgroup.items
+				itemgroup.items,
+				CASE WHEN married THEN 'true' ELSE 'false' END as married
 			FROM recipients 
 			LEFT JOIN (
 				SELECT recipientsid, string_agg(name || '(' || (case when islarge = true then 'large' else 'small' end) || ')', ', ') as items
@@ -217,7 +218,8 @@ export async function fetchRecipients() {
 				recipients.building,
 				CASE WHEN roomateName = '' THEN 'No' ELSE 'Yes' END as hasRoommates,
 				recipients.roomateName as roomatename,
-				to_char("createDate"::timestamp, 'MM/DD/YY HH24:MI:SS') as creation
+				to_char("createDate"::timestamp, 'MM/DD/YY HH24:MI:SS') as creation,
+				CASE WHEN recipients.married THEN 'married' ELSE 'not married' END as married
 			FROM recipients
 				LEFT JOIN (
 					SELECT recipientsid, string_agg(name, ', ') as items

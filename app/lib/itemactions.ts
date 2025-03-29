@@ -35,7 +35,8 @@ const RecipientSchema = z.object({
 	building: z.string(),
 	hasroommate: z.enum(['yes', 'no'], { invalid_type_error: 'Please select roommate option.' }),
 	roommatename: z.string().optional(),
-	apartmentnumber: z.string()
+	apartmentnumber: z.string(),
+	married: z.enum(['yes', 'no'], { invalid_type_error: 'Please select married option.' })
 });
 const AssociateItemsSchema = z.object({
 	largeItemId: z.string().optional().nullable(),
@@ -126,7 +127,8 @@ export async function createRecipient(formData: FormData) {
 		building: formData.get('building'),
 		apartmentnumber: formData.get('apartmentnumber'),
 		hasroommate: formData.get('roommate'),
-		roommatename: formData.get('roommatename')
+		roommatename: formData.get('roommatename'),
+		married: formData.get('married')
 	});
 	const isMale: boolean = rawData.gender == 'male';
 	var semesterId: number = 0;
@@ -146,8 +148,8 @@ export async function createRecipient(formData: FormData) {
 	console.log(isMale);
 	try {
 		const result = await sql`
-			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename, apartmentnumber)
-			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename}, ${rawData.apartmentnumber})
+			INSERT INTO recipients (name, semester, degree, ismale, phone, email, country, apartmentid, address, building, roomatename, apartmentnumber, married)
+			VALUES(${rawData.name}, ${rawData.semester}, ${rawData.degree}, ${isMale}, ${rawData.phone}, ${rawData.email}, ${rawData.homecountry}, ${rawData.apartmentid}, ${rawData.otherapartment}, ${rawData.building}, ${rawData.roommatename}, ${rawData.apartmentnumber}, ${rawData.married})
 			RETURNING recipientsid;			
 		`;
 		// Access the recipientsid of the inserted row
@@ -174,7 +176,8 @@ export async function updateRecipient(id: string, prevState: State, formData: Fo
 		otherapartment: formData.get('otherapartment'),
 		building: formData.get('building'),
 		hasroommate: formData.get('roommate'),
-		roommatename: formData.get('roommatename')
+		roommatename: formData.get('roommatename'),
+		married: formData.get('married')
 	});
 	const isMale: boolean = rawData.gender == 'male';
 	var semesterId: number = 0;
@@ -206,7 +209,8 @@ export async function updateRecipient(id: string, prevState: State, formData: Fo
 				apartmentid = ${rawData.apartmentid},
 				address = ${rawData.otherapartment},
 				building = ${rawData.building},
-				roomatename = ${rawData.roommatename}
+				roomatename = ${rawData.roommatename},
+				married = ${rawData.married}
 			WHERE recipientsid = ${id}
 			
 		`;

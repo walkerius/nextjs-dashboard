@@ -2,13 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\dashboard",
-    "\\app\\dashboard\\(overview)",
-    "\\app\\lib",
-    "\\app\\ui",
+    "\\app\\dashboard\\apartments",
+    "\\app\\dashboard\\customers",
+    "\\app\\dashboard\\export",
+    "\\app\\dashboard\\registration",
+    "\\app\\dashboard\\registration\\[id]\\edit",
+    "\\app\\login",
     "\\app\\ui\\dashboard",
-    "\\public",
-    "\\scripts"
+    "\\app\\ui\\registration"
   ],
+  "SelectedNode": "\\app\\lib\\itemactions.ts",
   "PreviewInSolutionExplorer": false
 }

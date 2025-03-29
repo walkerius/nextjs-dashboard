@@ -127,6 +127,7 @@ export type ItemsTable = {
 	hasroommates: string;
 	roomatename: string;
 	creation: string;
+	married: string;
 }
 
 export type apartmentField = {
@@ -151,6 +152,7 @@ export type RecipientProfile = {
 	roomateid: string;
 	roomatename: string;
 	items: string;
+	married: string;
 }
 
 export type ApartmentCountTable = {
