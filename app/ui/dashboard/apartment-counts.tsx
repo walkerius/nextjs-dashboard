@@ -3,6 +3,8 @@ import { Button } from '@/app/ui/button';
 import { fetchApartmentCounts } from '@/app/lib/itemdata';
 import { ItemCountTable } from '../../lib/definitions';
 import { ResetDatabase } from '@/app/lib/itemactions';
+import { DeleteApartmentIcon } from '@/app/ui/registration/buttons'; 
+
 
 export default async function ApartmentsTable() {
 	const apartments = await fetchApartmentCounts();
@@ -61,6 +63,13 @@ export default async function ApartmentsTable() {
 									<td className="whitespace-nowrap px-3 py-3">
 										{apartment.residents}
 									</td>
+
+									<td className="whitespace-nowrap py-3 pl-6 pr-3">
+										<div className="flex justify-end gap-3">
+											<DeleteApartmentIcon id={apartment.id} />
+										</div>
+									</td>
+
 								</tr>
 							))}
 						</tbody>

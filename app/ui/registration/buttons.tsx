@@ -1,6 +1,6 @@
 import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { DeleteRecipient, DeleteItem } from '@/app/lib/itemactions';
+import { DeleteRecipient, DeleteItem, DeleteApartment } from '@/app/lib/itemactions';
 import { exportTableToExcel } from '@/app/lib/itemdata';
 
 export function NewRegistration() {
@@ -28,6 +28,18 @@ export function UpdateRegistration({ id }: { id: string }) {
 
 export function DeleteRegistration({ id }: { id: string }) {
 	const deleteInvoiceWithId = DeleteRecipient.bind(null, id);
+	return (
+		<form action={deleteInvoiceWithId}>
+			<button className="rounded-md border p-2 hover:bg-gray-100">
+				<span className="sr-only">Delete</span>
+				<TrashIcon className="w-5" />
+			</button>
+		</form>
+	);
+}
+
+export function DeleteApartmentIcon({ id }: { id: string }) {
+	const deleteInvoiceWithId = DeleteApartment.bind(null, id);
 	return (
 		<form action={deleteInvoiceWithId}>
 			<button className="rounded-md border p-2 hover:bg-gray-100">

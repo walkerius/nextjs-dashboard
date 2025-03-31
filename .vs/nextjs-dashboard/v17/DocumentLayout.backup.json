@@ -1,202 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Test vercel\\nextjs-dashboard\\",
+  "WorkspaceRootPath": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\definitions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\definitions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemactions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\lib\\itemactions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\itemactions.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\apartment-counts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\apartment-counts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\apartment-counts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\(overview)\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\(overview)\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\invoices\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\invoices\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associated-items.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\associated-items.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\buttons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\buttons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\table.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\table.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\customers\\table.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\customers\\table.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\item-counts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\item-counts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\registration\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\associate-item.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\export\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\export\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\export\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\export\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\auth.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:auth.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\create\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\registration\\create\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\customers\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\customers\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\placeholder-data.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\placeholder-data.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\apartments\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\apartments\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-apartments.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\create-apartments.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\nav-links.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\nav-links.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\sidenav.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\sidenav.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\apartments\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\apartments\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\next.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:next.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\next-env.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:next-env.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\scripts\\seed.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\seed.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\scripts\\bgseed.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\bgseed.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\[id]\\edit\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\registration\\[id]\\edit\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\action.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\action.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-items.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\create-items.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\create-items.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\data.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\data.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\edit-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\invoices\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\itemdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\buttons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\buttons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\scripts\\bgseed.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\bgseed.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\invoices\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\invoices\\create-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\search.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\search.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\registration\\associate-item.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\login-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\login-form.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\create-apartments.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\create-apartments.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\button.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\button.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\button.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\lib\\apartmentdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\lib\\apartmentdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\[id]\\edit\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\invoices\\[id]\\edit\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\invoices\\table.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\invoices\\table.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\create\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\invoices\\create\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\dashboard\\invoices\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\cards.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\ui\\dashboard\\cards.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -206,641 +66,191 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "buttons.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\buttons.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\registration\\buttons.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\buttons.tsx",
-              "RelativeToolTip": "app\\ui\\registration\\buttons.tsx",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAjwB0AAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "apartment-counts.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\apartment-counts.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\dashboard\\apartment-counts.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\apartment-counts.tsx",
+              "RelativeToolTip": "app\\ui\\dashboard\\apartment-counts.tsx",
+              "ViewState": "AgIAACYAAAAAAAAAAAAUwEAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-08T23:39:20.711Z",
+              "WhenOpened": "2025-03-29T18:55:40.713Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "itemdata.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemdata.ts",
-              "RelativeDocumentMoniker": "app\\lib\\itemdata.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemdata.ts",
-              "RelativeToolTip": "app\\lib\\itemdata.ts",
-              "ViewState": "AgIAAMgAAAAAAAAAAADgv9YAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "itemactions.ts",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\lib\\itemactions.ts",
+              "RelativeDocumentMoniker": "app\\lib\\itemactions.ts",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\lib\\itemactions.ts",
+              "RelativeToolTip": "app\\lib\\itemactions.ts",
+              "ViewState": "AgIAAEcBAAAAAAAAAAD4v1MBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-08T23:43:43.791Z",
+              "WhenOpened": "2025-03-29T18:59:55.022Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "buttons.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\buttons.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\registration\\buttons.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\buttons.tsx",
+              "RelativeToolTip": "app\\ui\\registration\\buttons.tsx",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-29T18:59:37.398Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "itemdata.ts",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\lib\\itemdata.ts",
+              "RelativeDocumentMoniker": "app\\lib\\itemdata.ts",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\lib\\itemdata.ts",
+              "RelativeToolTip": "app\\lib\\itemdata.ts",
+              "ViewState": "AgIAAO0AAAAAAAAAAAArwHwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-29T20:25:26.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "bgseed.js",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\scripts\\bgseed.js",
+              "RelativeDocumentMoniker": "scripts\\bgseed.js",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\scripts\\bgseed.js",
+              "RelativeToolTip": "scripts\\bgseed.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-29T20:25:16.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "itemactions.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemactions.ts",
-              "RelativeDocumentMoniker": "app\\lib\\itemactions.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\itemactions.ts",
-              "RelativeToolTip": "app\\lib\\itemactions.ts",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAwH4AAAArAAAAAAAAAA==",
+              "Title": "edit-form.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\registration\\edit-form.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx",
+              "RelativeToolTip": "app\\ui\\registration\\edit-form.tsx",
+              "ViewState": "AgIAAKwBAAAAAAAAAAD4v9ABAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-09T00:44:38.799Z",
+              "WhenOpened": "2025-03-29T20:24:16.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "edit-form.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\registration\\edit-form.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\edit-form.tsx",
-              "RelativeToolTip": "app\\ui\\registration\\edit-form.tsx",
-              "ViewState": "AgIAACQBAAAAAAAAAAAAAEIBAAAOAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\invoices\\edit-form.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\invoices\\edit-form.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\invoices\\edit-form.tsx",
+              "RelativeToolTip": "app\\ui\\invoices\\edit-form.tsx",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-17T01:09:48.404Z",
+              "WhenOpened": "2025-03-29T20:24:06.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "create-items.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\create-items.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\dashboard\\create-items.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\create-items.tsx",
+              "RelativeToolTip": "app\\ui\\dashboard\\create-items.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-29T20:24:03.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "associated-items.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associated-items.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\registration\\associated-items.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associated-items.tsx",
-              "RelativeToolTip": "app\\ui\\registration\\associated-items.tsx",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
+              "Title": "create-form.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\registration\\create-form.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx",
+              "RelativeToolTip": "app\\ui\\registration\\create-form.tsx",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAAAKwBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-07-02T22:13:53.131Z",
+              "WhenOpened": "2025-03-29T20:24:01.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "item-counts.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\item-counts.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\dashboard\\item-counts.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\item-counts.tsx",
-              "RelativeToolTip": "app\\ui\\dashboard\\item-counts.tsx",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "create-form.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\invoices\\create-form.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\invoices\\create-form.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\invoices\\create-form.tsx",
+              "RelativeToolTip": "app\\ui\\invoices\\create-form.tsx",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAI4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-15T01:55:40.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\registration\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\registration\\page.tsx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-08T23:42:07.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "apartment-counts.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\apartment-counts.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\dashboard\\apartment-counts.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\apartment-counts.tsx",
-              "RelativeToolTip": "app\\ui\\dashboard\\apartment-counts.tsx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-23T23:09:20.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "table.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\customers\\table.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\customers\\table.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\customers\\table.tsx",
-              "RelativeToolTip": "app\\ui\\customers\\table.tsx",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-08T16:33:53.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "layout.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\layout.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\layout.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\layout.tsx",
-              "RelativeToolTip": "app\\dashboard\\layout.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-13T21:52:10.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\(overview)\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\(overview)\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\(overview)\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\(overview)\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-12T22:47:38.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "definitions.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\definitions.ts",
-              "RelativeDocumentMoniker": "app\\lib\\definitions.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\definitions.ts",
-              "RelativeToolTip": "app\\lib\\definitions.ts",
-              "ViewState": "AgIAAFoAAAAAAAAAAADgv4IAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-01T00:37:48.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "associate-item.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\registration\\associate-item.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx",
-              "RelativeToolTip": "app\\ui\\registration\\associate-item.tsx",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwGcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-15T01:17:21.51Z",
+              "WhenOpened": "2025-03-29T20:23:58.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "table.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\table.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\registration\\table.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\table.tsx",
-              "RelativeToolTip": "app\\ui\\registration\\table.tsx",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEsAAAAXAAAAAAAAAA==",
+              "Title": "associate-item.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\registration\\associate-item.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\registration\\associate-item.tsx",
+              "RelativeToolTip": "app\\ui\\registration\\associate-item.tsx",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-08T23:55:30.032Z",
+              "WhenOpened": "2025-03-29T20:23:54.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\export\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\export\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\export\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\export\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-13T21:48:10.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "layout.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\export\\layout.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\export\\layout.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\export\\layout.tsx",
-              "RelativeToolTip": "app\\dashboard\\export\\layout.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-13T21:52:08.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": ".env",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\.env",
-              "RelativeDocumentMoniker": ".env",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\.env",
-              "RelativeToolTip": ".env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-08T17:02:34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "auth.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\auth.ts",
-              "RelativeDocumentMoniker": "auth.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\auth.ts",
-              "RelativeToolTip": "auth.ts",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-08T16:53:48.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "auth.config.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\auth.config.ts",
-              "RelativeDocumentMoniker": "auth.config.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\auth.config.ts",
-              "RelativeToolTip": "auth.config.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-08T16:54:04.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\create\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\registration\\create\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\create\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\registration\\create\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-09T01:30:40.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\invoices\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\invoices\\page.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-08T23:54:47.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "login-form.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\login-form.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\login-form.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\login-form.tsx",
-              "RelativeToolTip": "app\\ui\\login-form.tsx",
-              "ViewState": "AQIAABsAAAAAAAAAAAAewC0AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-07-04T14:37:15.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "search.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\search.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\search.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\search.tsx",
-              "RelativeToolTip": "app\\ui\\search.tsx",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAewBwAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-07-04T14:41:25.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "next-env.d.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\next-env.d.ts",
-              "RelativeDocumentMoniker": "next-env.d.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\next-env.d.ts",
-              "RelativeToolTip": "next-env.d.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-08T16:58:28.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-08T17:06:09.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\apartments\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\apartments\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\apartments\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\apartments\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-08T17:28:18.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "cards.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\cards.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\dashboard\\cards.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\cards.tsx",
-              "RelativeToolTip": "app\\ui\\dashboard\\cards.tsx",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwCcAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-01T00:36:47.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "create-form.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\invoices\\create-form.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\invoices\\create-form.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\invoices\\create-form.tsx",
-              "RelativeToolTip": "app\\ui\\invoices\\create-form.tsx",
-              "ViewState": "AQIAADIAAAAAAAAAAAAQwHkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-01T00:36:56.031Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "data.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\data.ts",
-              "RelativeDocumentMoniker": "app\\lib\\data.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\data.ts",
-              "RelativeToolTip": "app\\lib\\data.ts",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAcwLwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-03T00:22:44.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "table.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\invoices\\table.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\invoices\\table.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\invoices\\table.tsx",
-              "RelativeToolTip": "app\\ui\\invoices\\table.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-03T00:22:33.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "action.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\action.ts",
-              "RelativeDocumentMoniker": "app\\lib\\action.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\action.ts",
-              "RelativeToolTip": "app\\lib\\action.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-01T00:52:39.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "placeholder-data.js",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\placeholder-data.js",
-              "RelativeDocumentMoniker": "app\\lib\\placeholder-data.js",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\placeholder-data.js",
-              "RelativeToolTip": "app\\lib\\placeholder-data.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-15T01:42:33.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "next.config.js",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\next.config.js",
-              "RelativeDocumentMoniker": "next.config.js",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\next.config.js",
-              "RelativeToolTip": "next.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-15T00:07:43.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\customers\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\customers\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\customers\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\customers\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-13T21:48:42.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "layout.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\layout.tsx",
-              "RelativeDocumentMoniker": "app\\layout.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\layout.tsx",
-              "RelativeToolTip": "app\\layout.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-13T21:47:32.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\page.tsx",
-              "RelativeDocumentMoniker": "app\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\page.tsx",
-              "RelativeToolTip": "app\\page.tsx",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAmwBsAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-13T21:46:51.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\apartments\\page.tsx",
-              "RelativeDocumentMoniker": "app\\apartments\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\apartments\\page.tsx",
-              "RelativeToolTip": "app\\apartments\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-13T21:21:37.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "create-apartments.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-apartments.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\dashboard\\create-apartments.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-apartments.tsx",
-              "RelativeToolTip": "app\\ui\\dashboard\\create-apartments.tsx",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-23T23:09:46.951Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "apartmentdata.ts",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\apartmentdata.ts",
-              "RelativeDocumentMoniker": "app\\lib\\apartmentdata.ts",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\lib\\apartmentdata.ts",
-              "RelativeToolTip": "app\\lib\\apartmentdata.ts",
-              "ViewState": "AQIAACQAAAAAAAAAAAA5wEoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-23T23:07:49.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\[id]\\edit\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\registration\\[id]\\edit\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\registration\\[id]\\edit\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\registration\\[id]\\edit\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-17T01:31:49.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "bgseed.js",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\scripts\\bgseed.js",
-              "RelativeDocumentMoniker": "scripts\\bgseed.js",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\scripts\\bgseed.js",
-              "RelativeToolTip": "scripts\\bgseed.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-12T23:07:56.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "seed.js",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\scripts\\seed.js",
-              "RelativeDocumentMoniker": "scripts\\seed.js",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\scripts\\seed.js",
-              "RelativeToolTip": "scripts\\seed.js",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAwwKMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-12T23:01:43.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 12,
               "Title": "button.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\button.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\button.tsx",
               "RelativeDocumentMoniker": "app\\ui\\button.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\button.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\button.tsx",
               "RelativeToolTip": "app\\ui\\button.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABEAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-12T22:59:50.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\[id]\\edit\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\invoices\\[id]\\edit\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\[id]\\edit\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\invoices\\[id]\\edit\\page.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-09T01:50:48.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "page.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\create\\page.tsx",
-              "RelativeDocumentMoniker": "app\\dashboard\\invoices\\create\\page.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\dashboard\\invoices\\create\\page.tsx",
-              "RelativeToolTip": "app\\dashboard\\invoices\\create\\page.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-09T00:42:33.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "nav-links.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\nav-links.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\dashboard\\nav-links.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\nav-links.tsx",
-              "RelativeToolTip": "app\\ui\\dashboard\\nav-links.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-08T23:56:47.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "sidenav.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\sidenav.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\dashboard\\sidenav.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\sidenav.tsx",
-              "RelativeToolTip": "app\\ui\\dashboard\\sidenav.tsx",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-08T23:56:29.788Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "32c57ff2-f334-4695-9cf6-aaf9756e498d",
-        "Display": 0,
-        "X": 307,
-        "Y": 191,
-        "Width": 1490,
-        "Height": 572,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "create-form.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\registration\\create-form.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\registration\\create-form.tsx",
-              "RelativeToolTip": "app\\ui\\registration\\create-form.tsx",
-              "ViewState": "AgIAABQBAAAAAAAAAADgvyUBAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-09T00:43:00.783Z",
+              "WhenOpened": "2025-03-29T20:18:36.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "create-items.tsx",
-              "DocumentMoniker": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-items.tsx",
-              "RelativeDocumentMoniker": "app\\ui\\dashboard\\create-items.tsx",
-              "ToolTip": "D:\\Test vercel\\nextjs-dashboard\\app\\ui\\dashboard\\create-items.tsx",
-              "RelativeToolTip": "app\\ui\\dashboard\\create-items.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-29T20:15:11.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "create-apartments.tsx",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\create-apartments.tsx",
+              "RelativeDocumentMoniker": "app\\ui\\dashboard\\create-apartments.tsx",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\nextjs-dashboard\\app\\ui\\dashboard\\create-apartments.tsx",
+              "RelativeToolTip": "app\\ui\\dashboard\\create-apartments.tsx",
+              "ViewState": "AgIAACIAAAAAAAAAAAArwDYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-12T22:48:08.469Z",
+              "WhenOpened": "2025-03-29T19:05:20.366Z",
               "EditorCaption": ""
             }
           ]
