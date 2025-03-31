@@ -2,15 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\dashboard\\apartments",
-    "\\app\\dashboard\\customers",
-    "\\app\\dashboard\\export",
-    "\\app\\dashboard\\registration",
-    "\\app\\dashboard\\registration\\[id]\\edit",
-    "\\app\\login",
+    "\\app\\dashboard",
+    "\\app\\lib",
+    "\\app\\ui",
     "\\app\\ui\\dashboard",
-    "\\app\\ui\\registration"
+    "\\app\\ui\\invoices",
+    "\\app\\ui\\registration",
+    "\\scripts"
   ],
-  "SelectedNode": "\\app\\lib\\itemactions.ts",
+  "SelectedNode": "\\app\\ui\\registration\\edit-form.tsx",
   "PreviewInSolutionExplorer": false
 }
