@@ -26,6 +26,7 @@ export default function EditRecipientForm({
 	const initialState = { message: null, errors: {} };
 	const updateInvoiceWithId = updateRecipient.bind(null, recipient.recipientsid);
 	const [state, dispatch] = useFormState(updateInvoiceWithId, initialState);
+	const currentYear = new Date().getFullYear().toString().slice(-2); // e.g., "24"
 	return (
 		<form action={dispatch}>
 			<div className="rounded-md bg-gray-50 p-4 md:p-6">
@@ -66,7 +67,7 @@ export default function EditRecipientForm({
 									required
 								/>
 								<label htmlFor="spring" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
-									Spring &apos;24
+									Spring &apos;{currentYear}
 								</label>
 							</div>
 							<div className="flex items-center">
@@ -79,7 +80,7 @@ export default function EditRecipientForm({
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="summer" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
-									Summer &apos;24
+									Summer &apos;{currentYear}
 								</label>
 							</div>
 							<div className="flex items-center">
@@ -92,7 +93,7 @@ export default function EditRecipientForm({
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
 								<label htmlFor="fall" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
-									Fall &apos;24
+									Fall &apos;{currentYear}
 								</label>
 							</div>
 							<div className="flex items-center">
