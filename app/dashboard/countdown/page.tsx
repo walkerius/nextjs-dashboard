@@ -9,7 +9,7 @@ export default function Page() {
     useEffect(() => {
         const interval = setInterval(() => {
             setRefreshKey((oldKey) => oldKey + 1); // forces CurrentItems to re-mount
-        }, 20000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
