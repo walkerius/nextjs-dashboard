@@ -31,7 +31,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 			/>
 			<AssociateItems recipient={recipient} availableItems={availableitems} />
 			<RecipientItemTable query={id} />
-			<Form recipient={recipient} availableItems={availableitems} apartments={apartments} />
+			<Form recipient={recipient} apartments={apartments} />
 		</main>
 	);
 }
