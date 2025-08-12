@@ -14,7 +14,8 @@ import clsx from 'clsx';
 const links = [
 	{ name: 'Registration', href: '/dashboard/registration', icon: UserGroupIcon },
 	{ name: 'Export', href: '/dashboard/export', icon: UserGroupIcon },
-	{ name: 'Apartments', href: '/dashboard/apartments', icon: UserGroupIcon }
+	{ name: 'Apartments', href: '/dashboard/apartments', icon: UserGroupIcon },
+	{ name: 'ItemCounts', href: '/dashboard/countdown', icon: UserGroupIcon }
 ];
 
 export default function NavLinks() {
