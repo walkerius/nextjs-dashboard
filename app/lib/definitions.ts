@@ -149,6 +149,7 @@ export type RecipientProfile = {
 	apartmentid: string;
 	address: string;
 	building: string;
+    apartmentnumber: string;
 	roomateid: string;
 	roomatename: string;
 	items: string;

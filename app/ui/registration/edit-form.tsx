@@ -1,26 +1,17 @@
 'use client';
 
-import { AvailableItems, RecipientProfile, apartmentField } from '@/app/lib/definitions';
-import {
-	CheckIcon,
-	ClockIcon,
-	CurrencyDollarIcon,
-	UserCircleIcon,
-} from '@heroicons/react/24/outline';
+import { RecipientProfile, apartmentField } from '@/app/lib/definitions';
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { updateRecipient } from '@/app/lib/itemactions';
 import { useFormState } from 'react-dom';
-import { fetchCustomers } from '@/app/lib/data';
 
 
 export default function EditRecipientForm({
 	recipient,
-	availableItems,
 	apartments
 }: {
 	recipient: RecipientProfile;
-	availableItems: AvailableItems[];
 	apartments: apartmentField[]
 }) {
 	const initialState = { message: null, errors: {} };
@@ -373,7 +364,7 @@ export default function EditRecipientForm({
 				</div>
 				{/* apartment building */}
 				<div className="mb-4" style={{ margin: '10px' }}>
-					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
+					<label htmlFor="building" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Apartment Building:*
 					</label>
 					<div className="relative">
@@ -382,6 +373,7 @@ export default function EditRecipientForm({
 							name="building"
 							type="string"
 							placeholder="apartment building"
+							defaultValue={recipient.building}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 							required
@@ -391,7 +383,7 @@ export default function EditRecipientForm({
 				</div>
 				{/* apartment number */}
 				<div className="mb-4" style={{ margin: '10px' }}>
-					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
+					<label htmlFor="apartmentnumber" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
 						Apartment Number:*
 					</label>
 					<div className="relative">
@@ -400,6 +392,7 @@ export default function EditRecipientForm({
 							name="apartmentnumber"
 							type="string"
 							placeholder="apartment number"
+							defaultValue={recipient.apartmentnumber}
 							className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
 							aria-describedby="amount-error"
 							required
