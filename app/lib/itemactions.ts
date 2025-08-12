@@ -178,6 +178,7 @@ export async function updateRecipient(id: string, prevState: State, formData: Fo
 		apartmentid: formData.get('apartmentid'),
 		otherapartment: formData.get('otherapartment'),
 		building: formData.get('building'),
+        apartmentnumber: formData.get('apartmentnumber'),
 		hasroommate: formData.get('roommate'),
 		roommatename: formData.get('roommatename'),
 		married: formData.get('married')

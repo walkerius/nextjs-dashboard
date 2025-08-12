@@ -224,7 +224,7 @@ export default function EditRecipientForm({
 									id="true"
 									name="married"
 									type="radio"
-									value="true"
+									value="yes"
 									defaultChecked={recipient.married === 'true'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 									required
@@ -238,7 +238,7 @@ export default function EditRecipientForm({
 									id="false"
 									name="married"
 									type="radio"
-									value="false"
+									value="no"
 									defaultChecked={recipient.married === 'false'}
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
