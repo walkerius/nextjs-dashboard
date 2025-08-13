@@ -32,7 +32,19 @@ async function seedUsers(client) {
         ON CONFLICT (id) DO NOTHING;
       `;
       }),
-    );
+      );
+
+//      CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
+//INSERT INTO users(id, name, email, password)
+//      VALUES(
+//          gen_random_uuid(),
+//          'Grace Bible',
+//          'biggive@grace-bible.org',
+//          crypt('biggive123', gen_salt('bf', 10))
+//      )
+//ON CONFLICT(id) DO NOTHING;
+
 
     console.log(`Seeded ${insertedUsers.length} users`);
 

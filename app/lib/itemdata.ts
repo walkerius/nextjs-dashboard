@@ -234,7 +234,8 @@ export async function fetchRecipients() {
 				recipients.roomateName as roomatename,
 				to_char("createDate"::timestamp, 'MM/DD/YY HH24:MI:SS') as creation,
 				CASE WHEN recipients.married THEN 'married' ELSE 'not married' END as married,
-				recipients.apartment
+				recipients.apartment,
+				recipients.notes as note
 			FROM recipients
 				LEFT JOIN (
 					SELECT recipientsid, string_agg(name, ', ') as items

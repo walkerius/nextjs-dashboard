@@ -128,6 +128,7 @@ export type ItemsTable = {
 	roomatename: string;
 	creation: string;
 	married: string;
+    note: string;
 }
 
 export type apartmentField = {
