@@ -213,6 +213,7 @@ export async function updateRecipient(id: string, prevState: State, formData: Fo
 				apartmentid = ${rawData.apartmentid},
 				address = ${rawData.otherapartment},
 				building = ${rawData.building},
+				apartmentnumber = ${rawData.apartmentnumber},
 				roomatename = ${rawData.roommatename},
 				married = ${rawData.married}
 			WHERE recipientsid = ${id}
