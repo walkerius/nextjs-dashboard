@@ -384,26 +384,26 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 						<div className="flex gap-4">
 							<div className="flex items-center">
 								<input
-									id="yes"
+									id="roommateyes"
 									name="roommate"
 									type="radio"
 									value="yes"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 									required
 								/>
-								<label htmlFor="yes" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
+								<label htmlFor="roommateyes" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									Yes
 								</label>
 							</div>
 							<div className="flex items-center">
 								<input
-									id="no"
+									id="roommateno"
 									name="roommate"
 									type="radio"
 									value="no"
 									className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
 								/>
-								<label htmlFor="no" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
+								<label htmlFor="roommateno" className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600" style={{ fontSize: '22px' }}>
 									No
 								</label>
 							</div>
