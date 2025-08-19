@@ -342,7 +342,7 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 				{/* apartment building */}
 				<div className="mb-4" style={{ margin: '10px' }}>
 					<label htmlFor="building" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
-						Apartment Building (just the number, not the word "Building" or "Bldg", ex: 7):*
+						Apartment Building (just the number, not the word &quot;Building&quot; or &quot;Bldg&quot;, ex: 7):*
 					</label>
 					<div className="relative">
 						<input
@@ -359,11 +359,15 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 				</div>
 				{/* apartment number */}
 				<div className="mb-4" style={{ margin: '10px' }}>
-					<label htmlFor="apartmentnumber" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
-						Apartment Number (just the number, not the word "Apt," "Apartment," or "Unit," <br />
+					<label
+						htmlFor="apartmentnumber"
+						className="mb-2 block text-sm font-medium"
+						style={{ fontSize: '22px' }}
+					>
+						Apartment Number (just the number, not the word &quot;Apt,&quot; &quot;Apartment,&quot; or &quot;Unit,&quot; <br />
 						<span style={{ marginLeft: '1.5rem', display: 'block' }}>
 							ex: 1732 or 1732A, not Apt 1732A):*
-						</span>						
+						</span>
 					</label>
 					<div className="relative">
 						<input
