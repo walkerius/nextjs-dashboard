@@ -341,8 +341,8 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 				</div>
 				{/* apartment building */}
 				<div className="mb-4" style={{ margin: '10px' }}>
-					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
-						Apartment Building:*
+					<label htmlFor="building" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
+						Apartment Building (just the number, not the word "Building" or "Bldg", ex: 7):*
 					</label>
 					<div className="relative">
 						<input
@@ -359,8 +359,11 @@ export default function Form({ apartments }: { apartments: apartmentField[] }) {
 				</div>
 				{/* apartment number */}
 				<div className="mb-4" style={{ margin: '10px' }}>
-					<label htmlFor="country" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
-						Apartment Number:*
+					<label htmlFor="apartmentnumber" className="mb-2 block text-sm font-medium" style={{ fontSize: '22px' }}>
+						Apartment Number (just the number, not the word "Apt," "Apartment," or "Unit," <br />
+						<span style={{ marginLeft: '1.5rem', display: 'block' }}>
+							ex: 1732 or 1732A, not Apt 1732A):*
+						</span>						
 					</label>
 					<div className="relative">
 						<input
