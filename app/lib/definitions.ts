@@ -124,6 +124,7 @@ export type ItemsTable = {
 	country: string;
 	apartment: string;
 	building: string;
+    apartmentnumber: string;
 	hasroommates: string;
 	roomatename: string;
 	creation: string;
